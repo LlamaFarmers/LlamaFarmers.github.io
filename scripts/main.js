@@ -1,4 +1,4 @@
-document.getElementById("resetButton").addEventListener("click", function () {
+myButton.addEventListener("click", function () {
 	 letter11 = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter12 = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter13 = letterBank.charAt(Math.floor(Math.random()*26));
