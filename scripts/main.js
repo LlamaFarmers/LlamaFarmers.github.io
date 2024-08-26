@@ -21,8 +21,10 @@ document.getElementById("resetButton").addEventListener("click", function () {
 document.getElementById("startButton").addEventListener("click", function () {
 	if (onOffState == "OFF") {
 		onOffState = "ON";
+		document.getElementById("gameonofftext").style.color = "green";
 	} else {
 		onOffState = "OFF";
+		document.getElementById("gameonofftext").style.color = "red";
 	}
 	document.getElementById("gameonofftext").innerHTML = onOffState;
 });
@@ -70,4 +72,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 47";
+document.getElementById("versionnumber").innerHTML = "version: 48";
