@@ -36,5 +36,5 @@ var row3Barcode;
 var column1Barcode;
 var column2Barcode;
 var column3Barcode;
-var onOffState = "OFF"
-document.getElementById("versionnumber").innerHTML = "version: 37"
+var onOffState = "OFF";
+document.getElementById("versionnumber").innerHTML = "version: 38"
