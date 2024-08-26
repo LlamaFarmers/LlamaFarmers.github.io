@@ -12,5 +12,5 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	 document.getElementById("row2").innerHTML = letter21 + letter22 + letter23;
 	 document.getElementById("row3").innerHTML = letter31 + letter32 + letter33;
 });
-let myButton = document.querySelector("resetButton");
-let myTestingSpace = document.querySelector("testingSpace");
+let myButton = document.getElementById("resetButton");
+let myTestingSpace = document.getElementById("testingSpace");
