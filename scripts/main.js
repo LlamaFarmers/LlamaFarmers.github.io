@@ -27,9 +27,38 @@ document.getElementById("startButton").addEventListener("click", function () {
 	document.getElementById("gameonofftext").innerHTML = onOffState;
 });
 			
-//if (wordlist.includes(row1Barcode))
-	
-//const lettersquare = {  name: "A", tobeexploded: false};
+/*
+if (wordlist.includes(row1Barcode)) {
+	letter11.tobeexploded = true;
+	letter12.tobeexploded = true;
+	letter13.tobeexploded = true;
+}
+if (wordlist.includes(row2Barcode)) {
+	letter21.tobeexploded = true;
+	letter22.tobeexploded = true;
+	letter23.tobeexploded = true;
+}
+if (wordlist.includes(row3Barcode)) {
+	letter31.tobeexploded = true;
+	letter32.tobeexploded = true;
+	letter33.tobeexploded = true;
+}
+if (wordlist.includes(column1Barcode)) {
+	letter11.tobeexploded = true;
+	letter21.tobeexploded = true;
+	letter31.tobeexploded = true;
+}
+if (wordlist.includes(column2Barcode)) {
+	letter12.tobeexploded = true;
+	letter22.tobeexploded = true;
+	letter32.tobeexploded = true;
+}
+if (wordlist.includes(column3Barcode)) {
+	letter13.tobeexploded = true;
+	letter23.tobeexploded = true;
+	letter33.tobeexploded = true;
+}
+*/	
 
 let myButton = document.getElementById("resetButton");
 let myTestingSpace = document.getElementById("testingSpace");
@@ -41,4 +70,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 43";
+document.getElementById("versionnumber").innerHTML = "version: 44";
