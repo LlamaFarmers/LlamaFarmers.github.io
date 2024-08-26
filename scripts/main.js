@@ -8,9 +8,15 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	 letter31.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter32.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter33.name = letterBank.charAt(Math.floor(Math.random()*26));
-	 document.getElementById("row1").innerHTML = letter11.name + letter12.name + letter13.name;
-	 document.getElementById("row2").innerHTML = letter21.name + letter22.name + letter23.name;
-	 document.getElementById("row3").innerHTML = letter31.name + letter32.name + letter33.name;
+	 document.getElementById("letter11button").innerHTML = letter11.name;
+	 document.getElementById("letter12button").innerHTML = letter12.name;
+	 document.getElementById("letter13button").innerHTML = letter13.name;
+	 document.getElementById("letter21button").innerHTML = letter21.name;
+	 document.getElementById("letter22button").innerHTML = letter22.name;
+	 document.getElementById("letter23button").innerHTML = letter23.name;
+	 document.getElementById("letter31button").innerHTML = letter31.name;
+	 document.getElementById("letter32button").innerHTML = letter32.name;
+	 document.getElementById("letter33button").innerHTML = letter33.name;
 	 row1Barcode = letter11.name + letter12.name + letter13.name;
 	 row2Barcode = letter21.name + letter22.name + letter23.name;
 	 row3Barcode = letter31.name + letter32.name + letter33.name;
@@ -34,31 +40,49 @@ if (wordlist.includes(row1Barcode)) {
 	letter11.tobeexploded = true;
 	letter12.tobeexploded = true;
 	letter13.tobeexploded = true;
+	document.getElementById("letter11button").style.color = "green"
+	document.getElementById("letter12button").style.color = "green"
+	document.getElementById("letter13button").style.color = "green"
 }
 if (wordlist.includes(row2Barcode)) {
 	letter21.tobeexploded = true;
 	letter22.tobeexploded = true;
 	letter23.tobeexploded = true;
+	document.getElementById("letter21button").style.color = "green"
+	document.getElementById("letter22button").style.color = "green"
+	document.getElementById("letter23button").style.color = "green"
 }
 if (wordlist.includes(row3Barcode)) {
 	letter31.tobeexploded = true;
 	letter32.tobeexploded = true;
 	letter33.tobeexploded = true;
+	document.getElementById("letter31button").style.color = "green"
+	document.getElementById("letter32button").style.color = "green"
+	document.getElementById("letter33button").style.color = "green"
 }
 if (wordlist.includes(column1Barcode)) {
 	letter11.tobeexploded = true;
 	letter21.tobeexploded = true;
 	letter31.tobeexploded = true;
+	document.getElementById("letter11button").style.color = "green"
+	document.getElementById("letter21button").style.color = "green"
+	document.getElementById("letter31button").style.color = "green"
 }
 if (wordlist.includes(column2Barcode)) {
 	letter12.tobeexploded = true;
 	letter22.tobeexploded = true;
 	letter32.tobeexploded = true;
+	document.getElementById("letter12button").style.color = "green"
+	document.getElementById("letter22button").style.color = "green"
+	document.getElementById("letter32button").style.color = "green"
 }
 if (wordlist.includes(column3Barcode)) {
 	letter13.tobeexploded = true;
 	letter23.tobeexploded = true;
 	letter33.tobeexploded = true;
+	document.getElementById("letter13button").style.color = "green"
+	document.getElementById("letter23button").style.color = "green"
+	document.getElementById("letter33button").style.color = "green"
 }
 */	
 
@@ -72,4 +96,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 49";
+document.getElementById("versionnumber").innerHTML = "version: 50";

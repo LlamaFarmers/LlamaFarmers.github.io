@@ -28,11 +28,6 @@
 </tr>
 </table>
 
-<p id="row1">AAC</p>
-<p id="row2">AAE</p>
-<p id="row3">AAF</p>
-<p id="testingSpace">zero</p>
-
 <script>
 let letterBank = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const letter11 = { name: "A", tobeexploded: false};
@@ -53,6 +48,12 @@ const letter33 = { name: "I", tobeexploded: false};
 document.getElementById("letter31button").innerHTML = letter31.name;
 document.getElementById("letter32button").innerHTML = letter32.name;
 document.getElementById("letter33button").innerHTML = letter33.name;
+row1Barcode = letter11.name + letter12.name + letter13.name;
+row2Barcode = letter21.name + letter22.name + letter23.name;
+row3Barcode = letter31.name + letter32.name + letter33.name;
+column1Barcode = letter11.name + letter21.name + letter31.name;
+column2Barcode = letter12.name + letter22.name + letter32.name;
+column3Barcode = letter13.name + letter23.name + letter33.name;
 </script>
 
 <script src="scripts/main.js"></script>
