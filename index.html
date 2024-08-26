@@ -2,8 +2,8 @@
 <html>
 <body>
 <h1>Hello World</h1>
-<p>Version: 24</p>
-<button type="button" onclick="document.getElementById("testingSpace").innerHTML = "Llamas"">Reroll new grid</button>
+<p>Version: 25</p>
+<button id="resetButton" type="button">Reroll new grid</button>
 
 <p id="row1">AAC</p>
 <p id="row2">AAE</p>
@@ -12,7 +12,8 @@
 
 <script>
 function reroll() {
-return letterBank.charAt(Math.floor(Math.random()*26) + 1);
+document.getElementById("testingSpace").innerHTML = letterBank.charAt(Math.floor(Math.random()*26) + 1);
+return;
 }
 </script>
 
@@ -32,5 +33,6 @@ var letter33 = "I";
 document.getElementById("row3").innerHTML = letter31 + letter32 + letter33;
 </script>
 
+<script src="scripts/main.js"></script>
 </body>
 </html>
