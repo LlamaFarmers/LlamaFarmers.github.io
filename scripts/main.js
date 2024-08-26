@@ -1,4 +1,4 @@
-getElementById("resetButton").addEventListener("click", function () {
+document.getElementById("resetButton").addEventListener("click", function () {
 	myTestingSpace = 'letterBank.charAt(Math.floor(Math.random()*26) + 1)';
 });
 let myButton = document.querySelector("resetButton")
