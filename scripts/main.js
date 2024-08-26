@@ -14,3 +14,4 @@ document.getElementById("resetButton").addEventListener("click", function () {
 });
 let myButton = document.getElementById("resetButton");
 let myTestingSpace = document.getElementById("testingSpace");
+const wordlist = [AAA, AAB]
