@@ -29,7 +29,7 @@ document.getElementById("startButton").addEventListener("click", function () {
 			
 //if (wordlist.includes(row1Barcode))
 	
-const lettersquare = {  name: "A", tobeexploded: false};
+//const lettersquare = {  name: "A", tobeexploded: false};
 
 let myButton = document.getElementById("resetButton");
 let myTestingSpace = document.getElementById("testingSpace");
@@ -41,4 +41,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 41";
+document.getElementById("versionnumber").innerHTML = "version: 42;

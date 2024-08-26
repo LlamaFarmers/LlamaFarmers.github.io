@@ -24,18 +24,18 @@ return;
 
 <script>
 let letterBank = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var letter11 = "A";
-var letter12 = "B";
-var letter13 = "C";
-document.getElementById("row1").innerHTML = letter11 + letter12 + letter13;
-var letter21 = "D";
-var letter22 = "E";
-var letter23 = "F";
-document.getElementById("row2").innerHTML = letter21 + letter22 + letter23;
-var letter31 = "G";
-var letter32 = "H";
-var letter33 = "I";
-document.getElementById("row3").innerHTML = letter31 + letter32 + letter33;
+const letter11 = { name: "A", tobeexploded: false};
+const letter12 = { name: "B", tobeexploded: false};
+const letter13 = { name: "C", tobeexploded: false};
+document.getElementById("row1").innerHTML = letter11.name + letter12.name + letter13.name;
+const letter21 = { name: "D", tobeexploded: false};
+const letter22 = { name: "E", tobeexploded: false};
+const letter23 = { name: "F", tobeexploded: false};
+document.getElementById("row2").innerHTML = letter21.name + letter22.name + letter23.name;
+const letter31 = { name: "G", tobeexploded: false};
+const letter32 = { name: "H", tobeexploded: false};
+const letter33 = { name: "I", tobeexploded: false};
+document.getElementById("row3").innerHTML = letter31.name + letter32.name + letter33.name;
 </script>
 
 <script src="scripts/main.js"></script>
