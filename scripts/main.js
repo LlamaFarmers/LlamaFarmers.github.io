@@ -25,7 +25,7 @@ document.getElementById("startButton").addEventListener("click", function () {
 		onOffState = "OFF";
 	}
 	document.getElementById("gameonofftext").innerHTML = onOffState;
-}
+});
 			
 let myButton = document.getElementById("resetButton");
 let myTestingSpace = document.getElementById("testingSpace");
@@ -37,4 +37,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 38";
+document.getElementById("versionnumber").innerHTML = "version: 39";
