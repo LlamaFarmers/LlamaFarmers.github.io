@@ -11,12 +11,12 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	 document.getElementById("row1").innerHTML = letter11 + letter12 + letter13;
 	 document.getElementById("row2").innerHTML = letter21 + letter22 + letter23;
 	 document.getElementById("row3").innerHTML = letter31 + letter32 + letter33;
-		var row1Barcode = letter11 + letter12 + letter13;
-		var row2Barcode = letter21 + letter22 + letter23;
-		var row3Barcode = letter31 + letter32 + letter33;
-		var column1Barcode = letter11 + letter21 + letter31;
-		var column2Barcode = letter12 + letter22 + letter32;
-		var column3Barcode = letter13 + letter23 + letter33;
+	 row1Barcode = letter11 + letter12 + letter13;
+	 row2Barcode = letter21 + letter22 + letter23;
+	 row3Barcode = letter31 + letter32 + letter33;
+	 column1Barcode = letter11 + letter21 + letter31;
+	 column2Barcode = letter12 + letter22 + letter32;
+	 column3Barcode = letter13 + letter23 + letter33;
 });
 let myButton = document.getElementById("resetButton");
 let myTestingSpace = document.getElementById("testingSpace");
@@ -27,3 +27,4 @@ var row3Barcode;
 var column1Barcode;
 var column2Barcode;
 var column3Barcode;
+document.getElementById("versionnumber").innerHTML = "34"
