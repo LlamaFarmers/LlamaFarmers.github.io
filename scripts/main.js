@@ -1,22 +1,22 @@
 document.getElementById("resetButton").addEventListener("click", function () {
-	 letter11 = letterBank.charAt(Math.floor(Math.random()*26));
-	 letter12 = letterBank.charAt(Math.floor(Math.random()*26));
-	 letter13 = letterBank.charAt(Math.floor(Math.random()*26));
-	 letter21 = letterBank.charAt(Math.floor(Math.random()*26));
-	 letter22 = letterBank.charAt(Math.floor(Math.random()*26));
-	 letter23 = letterBank.charAt(Math.floor(Math.random()*26));
-	 letter31 = letterBank.charAt(Math.floor(Math.random()*26));
-	 letter32 = letterBank.charAt(Math.floor(Math.random()*26));
-	 letter33 = letterBank.charAt(Math.floor(Math.random()*26));
-	 document.getElementById("row1").innerHTML = letter11 + letter12 + letter13;
-	 document.getElementById("row2").innerHTML = letter21 + letter22 + letter23;
-	 document.getElementById("row3").innerHTML = letter31 + letter32 + letter33;
-	 row1Barcode = letter11 + letter12 + letter13;
-	 row2Barcode = letter21 + letter22 + letter23;
-	 row3Barcode = letter31 + letter32 + letter33;
-	 column1Barcode = letter11 + letter21 + letter31;
-	 column2Barcode = letter12 + letter22 + letter32;
-	 column3Barcode = letter13 + letter23 + letter33;
+	 letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
+	 letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
+	 letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
+	 letter21.name = letterBank.charAt(Math.floor(Math.random()*26));
+	 letter22.name = letterBank.charAt(Math.floor(Math.random()*26));
+	 letter23.name = letterBank.charAt(Math.floor(Math.random()*26));
+	 letter31.name = letterBank.charAt(Math.floor(Math.random()*26));
+	 letter32.name = letterBank.charAt(Math.floor(Math.random()*26));
+	 letter33.name = letterBank.charAt(Math.floor(Math.random()*26));
+	 document.getElementById("row1").innerHTML = letter11.name + letter12.name + letter13.name;
+	 document.getElementById("row2").innerHTML = letter21.name + letter22.name + letter23.name;
+	 document.getElementById("row3").innerHTML = letter31.name + letter32.name + letter33.name;
+	 row1Barcode = letter11.name + letter12.name + letter13.name;
+	 row2Barcode = letter21.name + letter22.name + letter23.name;
+	 row3Barcode = letter31.name + letter32.name + letter33.name;
+	 column1Barcode = letter11.name + letter21.name + letter31.name;
+	 column2Barcode = letter12.name + letter22.name + letter32.name;
+	 column3Barcode = letter13.name + letter23.name + letter33.name;
 });
 document.getElementById("startButton").addEventListener("click", function () {
 	if (onOffState == "OFF") {
@@ -41,4 +41,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 42;
+document.getElementById("versionnumber").innerHTML = "version: 43";
