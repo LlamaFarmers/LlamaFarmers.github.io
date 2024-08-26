@@ -27,4 +27,4 @@ var row3Barcode;
 var column1Barcode;
 var column2Barcode;
 var column3Barcode;
-document.getElementById("versionnumber").innerHTML = "34"
+document.getElementById("versionnumber").innerHTML = "version: 34"
