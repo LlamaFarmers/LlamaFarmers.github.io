@@ -7,6 +7,7 @@
 <h1>Letter Swap</h1>
 <p id="versionnumber">Version: ERROR IN CODE</p>
 <p id="gameonofftext">OFF</p>
+<p id="scoretext">"SCORE: "</p>
 <button id="resetButton" type="button">Reroll new grid</button>
 <button id="startButton" type="button">Game On/Off</button>
 <button id="wordCheckButton" type="button">Word check</button>
@@ -55,6 +56,9 @@ row3Barcode = letter31.name + letter32.name + letter33.name;
 column1Barcode = letter11.name + letter21.name + letter31.name;
 column2Barcode = letter12.name + letter22.name + letter32.name;
 column3Barcode = letter13.name + letter23.name + letter33.name;
+gameScore = 0
+gameScoreTemp = 0
+document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
 </script>
 
 <script src="scripts/main.js"></script>

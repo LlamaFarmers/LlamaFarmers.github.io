@@ -87,46 +87,55 @@ if (wordlist.includes(column3Barcode)) {
 if (letter11.tobeexploded) {
 	letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
 	document.getElementById("letter11button").style.color = "black";
+	gameScoreTemp++;
 	letter11.tobeexploded = false;
 }
 if (letter12.tobeexploded) {
 	letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
 	document.getElementById("letter12button").style.color = "black";
+	gameScoreTemp++;
 	letter12.tobeexploded = false;
 }
 if (letter13.tobeexploded) {
 	letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
 	document.getElementById("letter13button").style.color = "black";
+	gameScoreTemp++;
 	letter13.tobeexploded = false;
 }
 if (letter21.tobeexploded) {
 	letter21.name = letterBank.charAt(Math.floor(Math.random()*26));
 	document.getElementById("letter21button").style.color = "black";
+	gameScoreTemp++;
 	letter21.tobeexploded = false;
 }
 if (letter22.tobeexploded) {
 	letter22.name = letterBank.charAt(Math.floor(Math.random()*26));
 	document.getElementById("letter22button").style.color = "black";
+	gameScoreTemp++;
 	letter22.tobeexploded = false;
 }
 if (letter23.tobeexploded) {
 	letter23.name = letterBank.charAt(Math.floor(Math.random()*26));
 	document.getElementById("letter23button").style.color = "black";
+	gameScoreTemp++;
 	letter23.tobeexploded = false;
 }
 if (letter31.tobeexploded) {
 	letter31.name = letterBank.charAt(Math.floor(Math.random()*26));
 	document.getElementById("letter31button").style.color = "black";
+	gameScoreTemp++;
 	letter31.tobeexploded = false;
 }
 if (letter32.tobeexploded) {
 	letter32.name = letterBank.charAt(Math.floor(Math.random()*26));
 	document.getElementById("letter32button").style.color = "black";
+	gameScoreTemp++;
 	letter32.tobeexploded = false;
 }
 if (letter33.tobeexploded) {
 	letter33.name = letterBank.charAt(Math.floor(Math.random()*26));
 	document.getElementById("letter33button").style.color = "black";
+	gameScoreTemp++;
 	letter33.tobeexploded = false;
 }
 	 document.getElementById("letter11button").innerHTML = letter11.name;
@@ -144,10 +153,15 @@ if (letter33.tobeexploded) {
 	 column1Barcode = letter11.name + letter21.name + letter31.name;
 	 column2Barcode = letter12.name + letter22.name + letter32.name;
 	 column3Barcode = letter13.name + letter23.name + letter33.name;
+	 if (gameScoreTemp > 3)
+		 gameScoreTemp = gameScoreTemp +3
+	 
 });
 
 //document.getElementById("letter11button").addEventListener("click", function () {
 
+var gameScoreTemp
+var gameScore;
 var swapHelper;
 let myButton = document.getElementById("resetButton");
 let myTestingSpace = document.getElementById("testingSpace");
