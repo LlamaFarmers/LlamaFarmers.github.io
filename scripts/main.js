@@ -84,6 +84,51 @@ if (wordlist.includes(column3Barcode)) {
 	document.getElementById("letter23button").style.color = "green";
 	document.getElementById("letter33button").style.color = "green";
 }
+if (letter11.tobeexploded) {
+	letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
+	document.getElementById("letter11button").style.color = "black";
+	letter11.tobeexploded = false;
+}
+if (letter12.tobeexploded) {
+	letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
+	document.getElementById("letter12button").style.color = "black";
+	letter12.tobeexploded = false;
+}
+if (letter13.tobeexploded) {
+	letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
+	document.getElementById("letter13button").style.color = "black";
+	letter13.tobeexploded = false;
+}
+if (letter21.tobeexploded) {
+	letter21.name = letterBank.charAt(Math.floor(Math.random()*26));
+	document.getElementById("letter21button").style.color = "black";
+	letter21.tobeexploded = false;
+}
+if (letter22.tobeexploded) {
+	letter22.name = letterBank.charAt(Math.floor(Math.random()*26));
+	document.getElementById("letter22button").style.color = "black";
+	letter22.tobeexploded = false;
+}
+if (letter23.tobeexploded) {
+	letter23.name = letterBank.charAt(Math.floor(Math.random()*26));
+	document.getElementById("letter23button").style.color = "black";
+	letter23.tobeexploded = false;
+}
+if (letter31.tobeexploded) {
+	letter31.name = letterBank.charAt(Math.floor(Math.random()*26));
+	document.getElementById("letter31button").style.color = "black";
+	letter31.tobeexploded = false;
+}
+if (letter32.tobeexploded) {
+	letter32.name = letterBank.charAt(Math.floor(Math.random()*26));
+	document.getElementById("letter32button").style.color = "black";
+	letter32.tobeexploded = false;
+}
+if (letter33.tobeexploded) {
+	letter33.name = letterBank.charAt(Math.floor(Math.random()*26));
+	document.getElementById("letter33button").style.color = "black";
+	letter33.tobeexploded = false;
+}
 });
 
 let myButton = document.getElementById("resetButton");
@@ -96,4 +141,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 51.1";
+document.getElementById("versionnumber").innerHTML = "version: 52";
