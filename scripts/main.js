@@ -35,7 +35,7 @@ document.getElementById("startButton").addEventListener("click", function () {
 	document.getElementById("gameonofftext").innerHTML = onOffState;
 });
 			
-document.getElementById("wordcheckButton").addEventListener("click", function () {
+document.getElementById("wordCheckButton").addEventListener("click", function () {
 if (wordlist.includes(row1Barcode)) {
 	letter11.tobeexploded = true;
 	letter12.tobeexploded = true;
@@ -96,4 +96,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 51";
+document.getElementById("versionnumber").innerHTML = "version: 51.1";
