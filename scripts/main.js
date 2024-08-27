@@ -209,6 +209,11 @@ document.getElementById("letter13button").addEventListener("click", function () 
 	document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	});
+	
+document.getElementById("bluealien").addEventListener("click", function () {
+document.body.style.background = blue;
+});	
+	
 var gameScoreTemp
 var gameScore;
 var swapHelper;
