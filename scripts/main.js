@@ -155,7 +155,10 @@ if (letter33.tobeexploded) {
 	 column3Barcode = letter13.name + letter23.name + letter33.name;
 	 if (gameScoreTemp > 3)
 		 gameScoreTemp = gameScoreTemp +3
-	 
+	 gameScore = gameScore + gameScoreTemp
+	 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
+	 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points!";
+	 gameScoreTemp = 0
 });
 
 //document.getElementById("letter11button").addEventListener("click", function () {
@@ -173,4 +176,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 52.3";
+document.getElementById("versionnumber").innerHTML = "version: 53";
