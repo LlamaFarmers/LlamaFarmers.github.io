@@ -177,7 +177,8 @@ document.getElementById("letter11button").addEventListener("click", function () 
 	document.getElementById(swapHeperToo).innerHTML = swapHeperToo.name;
 	swapHelper = 0;
 	swapHeperToo = 0;
-	});
+	}
+});
 document.getElementById("letter12button").addEventListener("click", function () {
 	if(swapHelper == 0) {
 		swapHelper = letter12.name;
@@ -189,6 +190,7 @@ document.getElementById("letter12button").addEventListener("click", function () 
 	document.getElementById(swapHeperToo).innerHTML = swapHeperToo.name;
 	swapHelper = 0;
 	swapHeperToo = 0;
+	}
 	});
 document.getElementById("letter13button").addEventListener("click", function () {
 	if(swapHelper == 0) {
@@ -201,6 +203,7 @@ document.getElementById("letter13button").addEventListener("click", function () 
 	document.getElementById(swapHeperToo).innerHTML = swapHeperToo.name;
 	swapHelper = 0;
 	swapHeperToo = 0;
+	}
 	});
 var gameScoreTemp
 var gameScore;
@@ -216,4 +219,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 54";
+document.getElementById("versionnumber").innerHTML = "version: 54.1";
