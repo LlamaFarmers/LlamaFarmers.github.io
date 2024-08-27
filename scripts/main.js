@@ -147,8 +147,6 @@ if (letter33.tobeexploded) {
 });
 
 //document.getElementById("letter11button").addEventListener("click", function () {
-	
-});
 
 var swapHelper;
 let myButton = document.getElementById("resetButton");
