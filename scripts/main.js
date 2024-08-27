@@ -23,6 +23,11 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	 column1Barcode = letter11.name + letter21.name + letter31.name;
 	 column2Barcode = letter12.name + letter22.name + letter32.name;
 	 column3Barcode = letter13.name + letter23.name + letter33.name;
+	 gameScoreTemp = 1;
+	 gameScore = gameScore - gameScoreTemp;
+	 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
+	 document.getElementById("roundscoretext").innerHTML = "Minus 1 point for new grid"
+	 gameScoreTemp = 0;
 });
 document.getElementById("startButton").addEventListener("click", function () {
 	if (onOffState == "OFF") {
@@ -176,4 +181,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 53";
+document.getElementById("versionnumber").innerHTML = "version: 53.1";
