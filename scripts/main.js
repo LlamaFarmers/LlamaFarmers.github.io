@@ -29,16 +29,6 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	 document.getElementById("roundscoretext").innerHTML = "Minus 1 point for new grid"
 	 gameScoreTemp = 0;
 });
-document.getElementById("startButton").addEventListener("click", function () {
-	if (onOffState == "OFF") {
-		onOffState = "ON";
-		document.getElementById("gameonofftext").style.color = "green";
-	} else {
-		onOffState = "OFF";
-		document.getElementById("gameonofftext").style.color = "red";
-	}
-	document.getElementById("gameonofftext").innerHTML = onOffState;
-});
 			
 document.getElementById("wordCheckButton").addEventListener("click", function () {
 if (wordlist.includes(row1Barcode)) {
@@ -227,4 +217,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 54.3";
+document.getElementById("versionnumber").innerHTML = "version: 54.4";
