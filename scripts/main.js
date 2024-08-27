@@ -211,7 +211,7 @@ document.getElementById("letter13button").addEventListener("click", function () 
 	});
 	
 document.getElementById("bluealien").addEventListener("click", function () {
-document.body.style.background = "blue";
+document.body.style.backgroundColor = "blue";
 });	
 	
 var gameScoreTemp
