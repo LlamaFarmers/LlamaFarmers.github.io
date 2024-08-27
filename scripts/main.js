@@ -165,11 +165,17 @@ if (letter33.tobeexploded) {
 	 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points!";
 	 gameScoreTemp = 0
 });
+document.getElementById("swapCancelButton").addEventListener("click", function () {
+	swapHelper = 0;
+	swapHelperToo = 0;
+	document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+});
 
 document.getElementById("letter11button").addEventListener("click", function () {
 	if(swapHelper == 0) {
 		swapHelper = letter11.name;
 		swapHelperToo = letter11;
+		document.getElementById("swappingtext").innerHTML = "Swapping " + swapHelper + " with...";
 	} else {
 	swapHelperToo.name = letter11.name;
 	lettter11.name = swapHelper;
@@ -183,6 +189,7 @@ document.getElementById("letter12button").addEventListener("click", function () 
 	if(swapHelper == 0) {
 		swapHelper = letter12.name;
 		swapHelperToo = letter12;
+		document.getElementById("swappingtext").innerHTML = "Swapping " + swapHelper + " with...";
 	} else {
 	swapHelperToo.name = letter12.name;
 	lettter12.name = swapHelper;
@@ -196,6 +203,7 @@ document.getElementById("letter13button").addEventListener("click", function () 
 	if(swapHelper == 0) {
 		swapHelper = letter13.name;
 		swapHelperToo = letter13;
+		document.getElementById("swappingtext").innerHTML = "Swapping " + swapHelper + " with...";
 	} else {
 	swapHelperToo.name = letter13.name;
 	lettter13.name = swapHelper;
@@ -219,4 +227,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 54.2";
+document.getElementById("versionnumber").innerHTML = "version: 54.3";
