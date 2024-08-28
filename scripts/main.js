@@ -399,4 +399,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 73.1";
+document.getElementById("versionnumber").innerHTML = "version: 73.2";
