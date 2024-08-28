@@ -13,19 +13,6 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
 	 document.getElementById("roundscoretext").innerHTML = ""
 });
-
-/*
-document.getElementById("wordCheckSwapButton").addEventListener("click", function () {
-	if (wordCheckAfterSwap == "OFF") {
-		wordCheckAfterSwap = "ON";
-		document.getElementById("wordCheckSwapText").innerHTML = "Auto word check after swaps enabled";
-	} else {
-		wordCheckAfterSwap = "OFF";
-		document.getElementById("wordCheckSwapText").innerHTML = "Auto word check after swaps disabled";
-	}
-});
-	*/		
-			
 			
 document.getElementById("wordCheckButton").addEventListener("click", function () {
 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
@@ -59,15 +46,6 @@ document.getElementById("letter11button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
-		if (wordCheckAfterSwap == "ON") {
-	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
-	 updateGridWordCheck();
-	 updateGridVisual();
-	 setTimeout(updateGridGravity, 400)
-	 setTimeout(updateGridVisual, 500)
-	 setTimeout(function () {
-		 document.getElementById("titletext").innerHTML = "Letter Swap"
-	 }, 500);
 };
 	}
 	updateGridVisual();
@@ -85,14 +63,6 @@ document.getElementById("letter12button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
-		if (wordCheckAfterSwap == "ON") {
-	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
-	 updateGridWordCheck();
-	 updateGridVisual();
-	 setTimeout(updateGridGravity, 400)
-	 setTimeout(updateGridVisual, 500)
-	 setTimeout(function () {
-		 document.getElementById("titletext").innerHTML = "Letter Swap"
 	 }, 500);
 	}
 	updateGridVisual();
@@ -111,15 +81,6 @@ document.getElementById("letter13button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
-		if (wordCheckAfterSwap == "ON") {
-	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
-	 updateGridWordCheck();
-	 updateGridVisual();
-	 setTimeout(updateGridGravity, 400)
-	 setTimeout(updateGridVisual, 500)
-	 setTimeout(function () {
-		 document.getElementById("titletext").innerHTML = "Letter Swap"
-	 }, 500);
 		}
 			updateGridVisual();
 };
@@ -137,15 +98,6 @@ document.getElementById("letter21button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
-			if (wordCheckAfterSwap == "ON") {
-	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
-	 updateGridWordCheck();
-	 updateGridVisual();
-	 setTimeout(updateGridGravity, 400)
-	 setTimeout(updateGridVisual, 500)
-	 setTimeout(function () {
-		 document.getElementById("titletext").innerHTML = "Letter Swap"
-	 }, 500);
 	}
 	updateGridVisual();
 };
@@ -163,15 +115,6 @@ document.getElementById("letter22button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
-			if (wordCheckAfterSwap == "ON") {
-	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
-	 updateGridWordCheck();
-	 updateGridVisual();
-	 setTimeout(updateGridGravity, 400)
-	 setTimeout(updateGridVisual, 500)
-	 setTimeout(function () {
-		 document.getElementById("titletext").innerHTML = "Letter Swap"
-	 }, 500);
 	}
 	updateGridVisual();
 };
@@ -189,15 +132,6 @@ document.getElementById("letter23button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
-			if (wordCheckAfterSwap == "ON") {
-	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
-	 updateGridWordCheck();
-	 updateGridVisual();
-	 setTimeout(updateGridGravity, 400)
-	 setTimeout(updateGridVisual, 500)
-	 setTimeout(function () {
-		 document.getElementById("titletext").innerHTML = "Letter Swap"
-	 }, 500);
 	}
 	updateGridVisual();
 };
@@ -215,15 +149,6 @@ document.getElementById("letter31button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
-			if (wordCheckAfterSwap == "ON") {
-	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
-	 updateGridWordCheck();
-	 updateGridVisual();
-	 setTimeout(updateGridGravity, 400)
-	 setTimeout(updateGridVisual, 500)
-	 setTimeout(function () {
-		 document.getElementById("titletext").innerHTML = "Letter Swap"
-	 }, 500);
 	}
 	updateGridVisual();
 };
@@ -241,15 +166,6 @@ document.getElementById("letter32button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
-			if (wordCheckAfterSwap == "ON") {
-	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
-	 updateGridWordCheck();
-	 updateGridVisual();
-	 setTimeout(updateGridGravity, 400)
-	 setTimeout(updateGridVisual, 500)
-	 setTimeout(function () {
-		 document.getElementById("titletext").innerHTML = "Letter Swap"
-	 }, 500);
 	}
 	updateGridVisual();
 };
@@ -267,15 +183,6 @@ document.getElementById("letter33button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
-			if (wordCheckAfterSwap == "ON") {
-	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
-	 updateGridWordCheck();
-	 updateGridVisual();
-	 setTimeout(updateGridGravity, 400)
-	 setTimeout(updateGridVisual, 500)
-	 setTimeout(function () {
-		 document.getElementById("titletext").innerHTML = "Letter Swap"
-	 }, 500);
 	}
 	updateGridVisual();
 	};
@@ -456,7 +363,6 @@ if (letter33.tobeexploded) {
 	 gameScoreTemp = 0;
 };
 
-var wordCheckAfterSwap = "OFF";
 var loopCounter;
 var gameScoreTemp;
 var gameScore;
@@ -474,4 +380,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 70.3 (Toggle auto word check after swap option currently broke)";
+document.getElementById("versionnumber").innerHTML = "version: 71";
