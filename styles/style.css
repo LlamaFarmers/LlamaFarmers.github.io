@@ -5,3 +5,7 @@
 .letterbuttons {
 	font-size: 2em
 }
+
+.letterbuttons {
+	transition: color: green 1s 
+}

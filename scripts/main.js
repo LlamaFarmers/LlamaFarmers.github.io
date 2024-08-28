@@ -23,7 +23,7 @@ if (wordlist.includes(row1Barcode)) {
 	letter11.tobeexploded = true;
 	letter12.tobeexploded = true;
 	letter13.tobeexploded = true;
-	document.getElementById("letter11button").style.color = "green";
+	document.getElementById("letter11button").classList.add("tobeexplodedvisual");
 	document.getElementById("letter12button").style.color = "green";
 	document.getElementById("letter13button").style.color = "green";
 }
@@ -69,7 +69,7 @@ if (wordlist.includes(column3Barcode)) {
 }
 if (letter11.tobeexploded) {
 	letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
-	document.getElementById("letter11button").style.color = "black";
+	document.getElementById("letter11button").classList.remove("tobeexplodedvisual");;
 	gameScoreTemp++;
 	letter11.tobeexploded = false;
 }
@@ -327,4 +327,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 58.1";
+document.getElementById("versionnumber").innerHTML = "version: 58.2";
