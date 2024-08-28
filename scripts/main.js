@@ -46,8 +46,7 @@ document.getElementById("letter11button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
-};
-	}
+	};
 	updateGridVisual();
 });
 document.getElementById("letter12button").addEventListener("click", function () {
@@ -63,10 +62,8 @@ document.getElementById("letter12button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
-	 }, 500);
 	}
 	updateGridVisual();
-};
 });
 document.getElementById("letter13button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -81,9 +78,8 @@ document.getElementById("letter13button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
-		}
-			updateGridVisual();
-};
+	}
+	updateGridVisual();
 });
 document.getElementById("letter21button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -100,7 +96,6 @@ document.getElementById("letter21button").addEventListener("click", function () 
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
-};
 });	
 document.getElementById("letter22button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -117,7 +112,6 @@ document.getElementById("letter22button").addEventListener("click", function () 
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
-};
 });		
 document.getElementById("letter23button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -134,7 +128,6 @@ document.getElementById("letter23button").addEventListener("click", function () 
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
-};
 });
 document.getElementById("letter31button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -151,7 +144,6 @@ document.getElementById("letter31button").addEventListener("click", function () 
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
-};
 });
 document.getElementById("letter32button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -168,7 +160,6 @@ document.getElementById("letter32button").addEventListener("click", function () 
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
-};
 });
 document.getElementById("letter33button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -185,17 +176,16 @@ document.getElementById("letter33button").addEventListener("click", function () 
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
-	};
 });
 
 
 
 document.getElementById("bluealien").addEventListener("click", function () {
-if (document.body.style.backgroundColor == "blue") {
-	document.body.style.backgroundColor = "";
-} else {
-document.body.style.backgroundColor = "blue";
-}
+	if (document.body.style.backgroundColor == "blue") {
+		document.body.style.backgroundColor = "";
+	} else {
+	document.body.style.backgroundColor = "blue";
+	}
 });	
 
 
@@ -380,4 +370,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 71";
+document.getElementById("versionnumber").innerHTML = "version: 72";
