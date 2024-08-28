@@ -307,7 +307,7 @@ function updateGrid() {
 }
 
 function updateGridGravity () {
-for(loopCounter = 0; loopCounter < 3; loopCounter + 1)  {
+for(loopCounter = 0; loopCounter < 3; loopCounter++)  {
 if (letter31.name == "") {
 	letter31.name = letter21.name;
 	letter21.name = "";
@@ -320,7 +320,7 @@ if (letter11.name == "") {
 	letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
 }
 };
-for(loopCounter = 0; loopCounter < 3; loopCounter + 1)  {
+for(loopCounter = 0; loopCounter < 3; loopCounter++)  {
 if (letter32.name == "") {
 	letter32.name = letter22.name;
 	letter22.name = "";
@@ -333,7 +333,7 @@ if (letter12.name == "") {
 	letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
 }
 };
-for(loopCounter = 0; loopCounter < 3; loopCounter + 1)  {
+for(loopCounter = 0; loopCounter < 3; loopCounter++)  {
 if (letter33.name == "") {
 	letter33.name = letter23.name;
 	letter23.name = "";
@@ -365,4 +365,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 60";
+document.getElementById("versionnumber").innerHTML = "version: 60.1";
