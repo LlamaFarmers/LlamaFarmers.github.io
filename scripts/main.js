@@ -30,15 +30,7 @@ document.getElementById("titletext").innerHTML = "PLEASE WAIT";
 document.getElementById("swapCancelButton").addEventListener("click", function () {
 	swapBucket1 = 0;
 	swapBucket2 = 0;
-	document.getElementById("letter11button").style.backgroundColor = ""
-	document.getElementById("letter12button").style.backgroundColor = ""
-	document.getElementById("letter13button").style.backgroundColor = ""
-	document.getElementById("letter21button").style.backgroundColor = ""
-	document.getElementById("letter22button").style.backgroundColor = ""
-	document.getElementById("letter23button").style.backgroundColor = ""
-	document.getElementById("letter31button").style.backgroundColor = ""
-	document.getElementById("letter32button").style.backgroundColor = ""
-	document.getElementById("letter33button").style.backgroundColor = ""
+	swapClearVisuals;
 	document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 });
 	
@@ -55,7 +47,7 @@ document.getElementById("letter11button").addEventListener("click", function () 
 		letter11.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
-		document.getElementById("letter11button").style.backgroundColor = ""
+		swapClearVisuals;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	};
 	updateGridVisual();
@@ -73,7 +65,7 @@ document.getElementById("letter12button").addEventListener("click", function () 
 		letter12.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
-		document.getElementById("letter12button").style.backgroundColor = ""
+		swapClearVisuals;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
@@ -91,7 +83,7 @@ document.getElementById("letter13button").addEventListener("click", function () 
 		letter13.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
-		document.getElementById("letter13button").style.backgroundColor = ""
+		swapClearVisuals;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
@@ -109,7 +101,7 @@ document.getElementById("letter21button").addEventListener("click", function () 
 		letter21.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
-		document.getElementById("letter21button").style.backgroundColor = ""
+		swapClearVisuals;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
@@ -127,7 +119,7 @@ document.getElementById("letter22button").addEventListener("click", function () 
 		letter22.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
-		document.getElementById("letter22button").style.backgroundColor = ""
+		swapClearVisuals;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
@@ -145,7 +137,7 @@ document.getElementById("letter23button").addEventListener("click", function () 
 		letter23.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
-		document.getElementById("letter23button").style.backgroundColor = ""
+		swapClearVisuals;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
@@ -163,7 +155,7 @@ document.getElementById("letter31button").addEventListener("click", function () 
 		letter31.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
-		document.getElementById("letter31button").style.backgroundColor = ""
+		swapClearVisuals;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
@@ -181,7 +173,7 @@ document.getElementById("letter32button").addEventListener("click", function () 
 		letter32.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
-		document.getElementById("letter32button").style.backgroundColor = ""
+		swapClearVisuals;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
@@ -199,7 +191,7 @@ document.getElementById("letter33button").addEventListener("click", function () 
 		letter33.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
-		document.getElementById("letter33button").style.backgroundColor = ""
+		swapClearVisuals;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
@@ -215,7 +207,17 @@ document.getElementById("bluealien").addEventListener("click", function () {
 	}
 });	
 
-
+function swapClearVisuals() {
+	document.getElementById("letter11button").style.backgroundColor = ""
+	document.getElementById("letter12button").style.backgroundColor = ""
+	document.getElementById("letter13button").style.backgroundColor = ""
+	document.getElementById("letter21button").style.backgroundColor = ""
+	document.getElementById("letter22button").style.backgroundColor = ""
+	document.getElementById("letter23button").style.backgroundColor = ""
+	document.getElementById("letter31button").style.backgroundColor = ""
+	document.getElementById("letter32button").style.backgroundColor = ""
+	document.getElementById("letter33button").style.backgroundColor = ""
+	}
 
 function updateGridVisual() {
 	 document.getElementById("letter11button").innerHTML = letter11.name;
@@ -397,4 +399,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 73";
+document.getElementById("versionnumber").innerHTML = "version: 73.1";
