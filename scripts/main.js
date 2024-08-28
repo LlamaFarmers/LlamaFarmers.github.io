@@ -385,7 +385,7 @@ if (letter33.tobeexploded) {
 		document.getElementById("bluemodetext").hidden = false;
 		document.getElementById("bluealien").hidden = false;
 	 if (gameScore > 0)
-		document.getElementById("bluealien").hidden = true;
+		document.getElementById("tutorialtext").hidden = true;
 	 }
 };
 
@@ -406,4 +406,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 75";
+document.getElementById("versionnumber").innerHTML = "version: 75.1";
