@@ -171,6 +171,8 @@ document.getElementById("letter11button").addEventListener("click", function () 
 	} else {
 		swapBucket1.name = letter11.name;
 		letter11.name = swapBucket2;
+		swapBucket1 = 0;
+		swapBucket2 = 0;
 	}
 	document.getElementById("letter11button").innerHTML = letter11.name;
 	 document.getElementById("letter12button").innerHTML = letter12.name;
@@ -193,6 +195,8 @@ document.getElementById("letter12button").addEventListener("click", function () 
 	} else {
 		swapBucket1.name = letter12.name;
 		letter12.name = swapBucket2;
+		swapBucket1 = 0;
+		swapBucket2 = 0;
 	}
 	document.getElementById("letter11button").innerHTML = letter11.name;
 	 document.getElementById("letter12button").innerHTML = letter12.name;
@@ -215,6 +219,8 @@ document.getElementById("letter13button").addEventListener("click", function () 
 	} else {
 		swapBucket1.name = letter13.name;
 		letter13.name = swapBucket2;
+		swapBucket1 = 0;
+		swapBucket2 = 0;
 	}
 	document.getElementById("letter11button").innerHTML = letter11.name;
 	 document.getElementById("letter12button").innerHTML = letter12.name;
@@ -247,4 +253,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 55";
+document.getElementById("versionnumber").innerHTML = "version: 56";
