@@ -3,17 +3,15 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	 letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter21.name = letterBank.charAt(Math.floor(Math.random()*26));
-	 letter22.name = letterBank.charAt(Math.floor(Math.random()*26));
+	 letter22.name = letterBankVowels.charAt(Math.floor(Math.random()*5));
 	 letter23.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter31.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter32.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter33.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 updateGridVisual()
-	 gameScoreTemp = 1;
-	 gameScore = gameScore - gameScoreTemp;
+	 gameScore = 0
 	 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
-	 document.getElementById("roundscoretext").innerHTML = "Minus 1 point for new grid"
-	 gameScoreTemp = 0;
+	 document.getElementById("roundscoretext").innerHTML = ""
 });
 
 /*
