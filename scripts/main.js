@@ -9,6 +9,10 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	 letter32.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter33.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 updateGridVisual()
+	 if (gameScore > gameHighScore) {
+		 gameHighScore = gameScore
+		 document.getElementById("highscoretext").innerHTML = "HIGH SCORE: " + gameHighScore;
+	 }
 	 gameScore = 0
 	 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
 	 document.getElementById("roundscoretext").innerHTML = ""
@@ -442,10 +446,12 @@ if (letter33.tobeexploded) {
 	 }
 };
 
+
 var hardModeToggle;
 var loopCounter;
 var gameScoreTemp;
 var gameScore;
+var gameHighScore
 var letterGravBucket;
 var swapBucket1;
 var swapBucket2;
@@ -460,4 +466,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 76.6";
+document.getElementById("versionnumber").innerHTML = "version: 77";
