@@ -8,27 +8,15 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	 letter31.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter32.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter33.name = letterBank.charAt(Math.floor(Math.random()*26));
-	 document.getElementById("letter11button").innerHTML = letter11.name;
-	 document.getElementById("letter12button").innerHTML = letter12.name;
-	 document.getElementById("letter13button").innerHTML = letter13.name;
-	 document.getElementById("letter21button").innerHTML = letter21.name;
-	 document.getElementById("letter22button").innerHTML = letter22.name;
-	 document.getElementById("letter23button").innerHTML = letter23.name;
-	 document.getElementById("letter31button").innerHTML = letter31.name;
-	 document.getElementById("letter32button").innerHTML = letter32.name;
-	 document.getElementById("letter33button").innerHTML = letter33.name;
-	 row1Barcode = letter11.name + letter12.name + letter13.name;
-	 row2Barcode = letter21.name + letter22.name + letter23.name;
-	 row3Barcode = letter31.name + letter32.name + letter33.name;
-	 column1Barcode = letter11.name + letter21.name + letter31.name;
-	 column2Barcode = letter12.name + letter22.name + letter32.name;
-	 column3Barcode = letter13.name + letter23.name + letter33.name;
+	 updateGrid()
 	 gameScoreTemp = 1;
 	 gameScore = gameScore - gameScoreTemp;
 	 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
 	 document.getElementById("roundscoretext").innerHTML = "Minus 1 point for new grid"
 	 gameScoreTemp = 0;
 });
+			
+			
 			
 document.getElementById("wordCheckButton").addEventListener("click", function () {
 if (wordlist.includes(row1Barcode)) {
@@ -133,21 +121,7 @@ if (letter33.tobeexploded) {
 	gameScoreTemp++;
 	letter33.tobeexploded = false;
 }
-	 document.getElementById("letter11button").innerHTML = letter11.name;
-	 document.getElementById("letter12button").innerHTML = letter12.name;
-	 document.getElementById("letter13button").innerHTML = letter13.name;
-	 document.getElementById("letter21button").innerHTML = letter21.name;
-	 document.getElementById("letter22button").innerHTML = letter22.name;
-	 document.getElementById("letter23button").innerHTML = letter23.name;
-	 document.getElementById("letter31button").innerHTML = letter31.name;
-	 document.getElementById("letter32button").innerHTML = letter32.name;
-	 document.getElementById("letter33button").innerHTML = letter33.name;
-	 row1Barcode = letter11.name + letter12.name + letter13.name;
-	 row2Barcode = letter21.name + letter22.name + letter23.name;
-	 row3Barcode = letter31.name + letter32.name + letter33.name;
-	 column1Barcode = letter11.name + letter21.name + letter31.name;
-	 column2Barcode = letter12.name + letter22.name + letter32.name;
-	 column3Barcode = letter13.name + letter23.name + letter33.name;
+	 updateGrid()
 	 if (gameScoreTemp > 3)
 		 gameScoreTemp = gameScoreTemp +3
 	 gameScore = gameScore + gameScoreTemp
@@ -155,6 +129,9 @@ if (letter33.tobeexploded) {
 	 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points!";
 	 gameScoreTemp = 0
 });
+
+
+
 document.getElementById("swapCancelButton").addEventListener("click", function () {
 	swapBucket1 = 0;
 	swapBucket2 = 0;
@@ -173,10 +150,10 @@ document.getElementById("letter11button").addEventListener("click", function () 
 		letter11.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGrid();
 });
-
 document.getElementById("letter12button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
 		swapBucket1 = letter12;
@@ -189,10 +166,10 @@ document.getElementById("letter12button").addEventListener("click", function () 
 		letter12.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGrid();
 });
-
 document.getElementById("letter13button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
 		swapBucket1 = letter13;
@@ -205,15 +182,114 @@ document.getElementById("letter13button").addEventListener("click", function () 
 		letter13.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGrid();
 });
-	
-		
-	
+document.getElementById("letter21button").addEventListener("click", function () {
+	if (swapBucket1 == 0) {
+		swapBucket1 = letter21;
+		swapBucket2 = letter21.name;
+		document.getElementById("swappingtext").innerHTML = "Swapping " + letter21.name + " with...";
+	} else if (swapBucket1 == letter21) {
+		document.getElementById("versionnumber").innerHTML = "ERROR: Double swapped "+ letter21.name;
+	} else {
+		swapBucket1.name = letter21.name;
+		letter21.name = swapBucket2;
+		swapBucket1 = 0;
+		swapBucket2 = 0;
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+	}
+	updateGrid();
+});	
+document.getElementById("letter22button").addEventListener("click", function () {
+	if (swapBucket1 == 0) {
+		swapBucket1 = letter22;
+		swapBucket2 = letter22.name;
+		document.getElementById("swappingtext").innerHTML = "Swapping " + letter22.name + " with...";
+	} else if (swapBucket1 == letter22) {
+		document.getElementById("versionnumber").innerHTML = "ERROR: Double swapped "+ letter22.name;
+	} else {
+		swapBucket1.name = letter22.name;
+		letter22.name = swapBucket2;
+		swapBucket1 = 0;
+		swapBucket2 = 0;
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+	}
+	updateGrid();
+});		
+document.getElementById("letter23button").addEventListener("click", function () {
+	if (swapBucket1 == 0) {
+		swapBucket1 = letter23;
+		swapBucket2 = letter23.name;
+		document.getElementById("swappingtext").innerHTML = "Swapping " + letter23.name + " with...";
+	} else if (swapBucket1 == letter23) {
+		document.getElementById("versionnumber").innerHTML = "ERROR: Double swapped "+ letter23.name;
+	} else {
+		swapBucket1.name = letter23.name;
+		letter23.name = swapBucket2;
+		swapBucket1 = 0;
+		swapBucket2 = 0;
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+	}
+	updateGrid();
+});
+document.getElementById("letter31button").addEventListener("click", function () {
+	if (swapBucket1 == 0) {
+		swapBucket1 = letter31;
+		swapBucket2 = letter31.name;
+		document.getElementById("swappingtext").innerHTML = "Swapping " + letter31.name + " with...";
+	} else if (swapBucket1 == letter31) {
+		document.getElementById("versionnumber").innerHTML = "ERROR: Double swapped "+ letter31.name;
+	} else {
+		swapBucket1.name = letter31.name;
+		letter31.name = swapBucket2;
+		swapBucket1 = 0;
+		swapBucket2 = 0;
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+	}
+	updateGrid();
+});
+document.getElementById("letter32button").addEventListener("click", function () {
+	if (swapBucket1 == 0) {
+		swapBucket1 = letter32;
+		swapBucket2 = letter32.name;
+		document.getElementById("swappingtext").innerHTML = "Swapping " + letter32.name + " with...";
+	} else if (swapBucket1 == letter32) {
+		document.getElementById("versionnumber").innerHTML = "ERROR: Double swapped "+ letter32.name;
+	} else {
+		swapBucket1.name = letter32.name;
+		letter32.name = swapBucket2;
+		swapBucket1 = 0;
+		swapBucket2 = 0;
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+	}
+	updateGrid();
+});
+document.getElementById("letter33button").addEventListener("click", function () {
+	if (swapBucket1 == 0) {
+		swapBucket1 = letter33;
+		swapBucket2 = letter33.name;
+		document.getElementById("swappingtext").innerHTML = "Swapping " + letter33.name + " with...";
+	} else if (swapBucket1 == letter33) {
+		document.getElementById("versionnumber").innerHTML = "ERROR: Double swapped "+ letter33.name;
+	} else {
+		swapBucket1.name = letter33.name;
+		letter33.name = swapBucket2;
+		swapBucket1 = 0;
+		swapBucket2 = 0;
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+	}
+	updateGrid();
+});
+
+
+
 document.getElementById("bluealien").addEventListener("click", function () {
 document.body.style.backgroundColor = "blue";
 });	
+
+
 
 function updateGrid() {
 	 document.getElementById("letter11button").innerHTML = letter11.name;
@@ -247,4 +323,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 57";
+document.getElementById("versionnumber").innerHTML = "version: 58";
