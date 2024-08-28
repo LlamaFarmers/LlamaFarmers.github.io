@@ -279,6 +279,7 @@ document.getElementById("letter33button").addEventListener("click", function () 
 	 }, 500);
 	}
 	updateGridVisual();
+	};
 });
 
 
@@ -474,4 +475,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 70";
+document.getElementById("versionnumber").innerHTML = "version: 70.1";
