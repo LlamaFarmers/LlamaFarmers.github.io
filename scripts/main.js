@@ -118,10 +118,10 @@ if (letter33.tobeexploded) {
 		 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points! (x2 multiplier for multiple words)";
 	 document.getElementById("roundwordstext").innerHTML = "Last round's words: " + roundWords;
 	 roundWords.length = 0;
-	 gameScoreTemp = 0
-	 updateGridVisual()
-	 setTimeout(updateGridGravity(), 500)
-	 updateGridVisual()
+	 gameScoreTemp = 0;
+	 updateGridVisual();
+	 setTimeout(updateGridGravity(), 1500);
+	 updateGridVisual();
 });
 
 
@@ -366,4 +366,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 64";
+document.getElementById("versionnumber").innerHTML = "version: 64.1";
