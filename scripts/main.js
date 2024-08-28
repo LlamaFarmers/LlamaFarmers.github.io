@@ -50,6 +50,7 @@ if (wordlist.includes(column1Barcode)) {
 	letter11.tobeexploded = true;
 	letter21.tobeexploded = true;
 	letter31.tobeexploded = true;
+	roundWords.push(" " + column1Barcode)
 	document.getElementById("letter11button").style.color = "green";
 	document.getElementById("letter21button").style.color = "green";
 	document.getElementById("letter31button").style.color = "green";
@@ -58,6 +59,7 @@ if (wordlist.includes(column2Barcode)) {
 	letter12.tobeexploded = true;
 	letter22.tobeexploded = true;
 	letter32.tobeexploded = true;
+	roundWords.push(" " + column2Barcode)
 	document.getElementById("letter12button").style.color = "green";
 	document.getElementById("letter22button").style.color = "green";
 	document.getElementById("letter32button").style.color = "green";
@@ -66,6 +68,7 @@ if (wordlist.includes(column3Barcode)) {
 	letter13.tobeexploded = true;
 	letter23.tobeexploded = true;
 	letter33.tobeexploded = true;
+	roundWords.push(" " + column3Barcode)
 	document.getElementById("letter13button").style.color = "green";
 	document.getElementById("letter23button").style.color = "green";
 	document.getElementById("letter33button").style.color = "green";
@@ -125,10 +128,12 @@ if (letter33.tobeexploded) {
 	letter33.tobeexploded = false;
 }
 	 if (gameScoreTemp > 3)
-		 gameScoreTemp = gameScoreTemp +3
+		 gameScoreTemp = gameScoreTemp * 2
 	 gameScore = gameScore + gameScoreTemp
 	 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
 	 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points!";
+	 if (gameScoreTemp > 3)
+		 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points! (x2 multiplier for multiple words"";
 	 document.getElementById("roundwordstext").innerHTML = "Last round's words: " + roundWords;
 	 roundWords.length = 0;
 	 gameScoreTemp = 0
@@ -333,4 +338,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 59.3";
+document.getElementById("versionnumber").innerHTML = "version: 59.4";
