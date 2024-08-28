@@ -120,10 +120,8 @@ if (letter33.tobeexploded) {
 	 roundWords.length = 0;
 	 gameScoreTemp = 0;
 	 updateGridVisual;
-	 setTimeout(function () {
-		updateGridGravity;
-		updateGridVisual;
-	 }, 500);
+	 setTimeout(updateGridGravity, 400)
+	 setTimeout(updateGridVisual, 500)
 });
 
 
@@ -368,4 +366,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 64.5";
+document.getElementById("versionnumber").innerHTML = "version: 64.6";
