@@ -286,7 +286,11 @@ document.getElementById("letter33button").addEventListener("click", function () 
 
 
 document.getElementById("bluealien").addEventListener("click", function () {
+if (document.body.style.backgroundColor == "blue") {
+	document.body.style.backgroundColor = "";
+} else {
 document.body.style.backgroundColor = "blue";
+}
 });	
 
 
@@ -323,4 +327,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 58";
+document.getElementById("versionnumber").innerHTML = "version: 58.1";
