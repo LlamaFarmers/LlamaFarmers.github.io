@@ -15,7 +15,7 @@ document.getElementById("resetButton").addEventListener("click", function () {
 });
 			
 document.getElementById("wordCheckButton").addEventListener("click", function () {
-document.getElementById("titletext").innerHTML = "DON'T CLICK!";
+document.getElementById("titletext").innerHTML = "PLEASE WAIT";
 	 updateGridWordCheck();
 	 updateGridVisual();
 	 setTimeout(updateGridGravity, 400)
