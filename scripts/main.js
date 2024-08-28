@@ -56,47 +56,56 @@ if (wordlist.includes(column3Barcode)) {
 	roundWords.push(" " + column3Barcode)
 }
 if (letter11.tobeexploded) {
-	letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
+	//letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter11.name = "";
 	gameScoreTemp++;
 	letter11.tobeexploded = false;
 }
 if (letter12.tobeexploded) {
-	letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
+	//letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter12.name = "";
 	gameScoreTemp++;
 	letter12.tobeexploded = false;
 }
 if (letter13.tobeexploded) {
-	letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
+	//letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter13.name = "";
 	gameScoreTemp++;
 	letter13.tobeexploded = false;
 }
 if (letter21.tobeexploded) {
-	letter21.name = letterBank.charAt(Math.floor(Math.random()*26));
+	//letter21.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter21.name = "";
 	gameScoreTemp++;
 	letter21.tobeexploded = false;
 }
 if (letter22.tobeexploded) {
-	letter22.name = letterBank.charAt(Math.floor(Math.random()*26));
+	//letter22.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter22.name = "";
 	gameScoreTemp++;
 	letter22.tobeexploded = false;
 }
 if (letter23.tobeexploded) {
-	letter23.name = letterBank.charAt(Math.floor(Math.random()*26));
+	//letter23.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter23.name = "";
 	gameScoreTemp++;
 	letter23.tobeexploded = false;
 }
 if (letter31.tobeexploded) {
-	letter31.name = letterBank.charAt(Math.floor(Math.random()*26));
+	//letter31.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter31.name = "";
 	gameScoreTemp++;
 	letter31.tobeexploded = false;
 }
 if (letter32.tobeexploded) {
-	letter32.name = letterBank.charAt(Math.floor(Math.random()*26));
+	//letter32.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter32.name = "";
 	gameScoreTemp++;
 	letter32.tobeexploded = false;
 }
 if (letter33.tobeexploded) {
-	letter33.name = letterBank.charAt(Math.floor(Math.random()*26));
+	//letter33.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter33.name = "";
 	gameScoreTemp++;
 	letter33.tobeexploded = false;
 }
@@ -110,6 +119,7 @@ if (letter33.tobeexploded) {
 	 document.getElementById("roundwordstext").innerHTML = "Last round's words: " + roundWords;
 	 roundWords.length = 0;
 	 gameScoreTemp = 0
+	 updateGridGravity()
 	 updateGrid()
 });
 
@@ -295,9 +305,53 @@ function updateGrid() {
 	 column2Barcode = letter12.name + letter22.name + letter32.name;
 	 column3Barcode = letter13.name + letter23.name + letter33.name;
 }
-	
-var gameScoreTemp
+
+function updateGridGravity () {
+for(loopCounter = 0; loopCounter < 3; loopCounter + 1)  {
+if (letter31.name == "") {
+	letter31.name = letter21.name;
+	letter21.name = "";
+}
+if (letter21.name == "") {
+	letter21.name = letter11.name;
+	letter11.name = "";
+}
+if (letter11.name == "") {
+	letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
+}
+};
+for(loopCounter = 0; loopCounter < 3; loopCounter + 1)  {
+if (letter32.name == "") {
+	letter32.name = letter22.name;
+	letter22.name = "";
+}
+if (letter22.name == "") {
+	letter22.name = letter12.name;
+	letter12.name = "";
+}
+if (letter12.name == "") {
+	letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
+}
+};
+for(loopCounter = 0; loopCounter < 3; loopCounter + 1)  {
+if (letter33.name == "") {
+	letter33.name = letter23.name;
+	letter23.name = "";
+}
+if (letter23.name == "") {
+	letter23.name = letter13.name;
+	letter13.name = "";
+}
+if (letter13.name == "") {
+	letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
+}
+};
+};
+
+var loopCounter;
+var gameScoreTemp;
 var gameScore;
+var letterGravBucket;
 var swapBucket1;
 var swapBucket2;
 let myButton = document.getElementById("resetButton");
@@ -311,4 +365,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 59.5.1";
+document.getElementById("versionnumber").innerHTML = "version: 60";
