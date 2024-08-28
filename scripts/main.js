@@ -15,6 +15,16 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	 document.getElementById("roundscoretext").innerHTML = "Minus 1 point for new grid"
 	 gameScoreTemp = 0;
 });
+
+document.getElementById("wordCheckSwapButton").addEventListener("click", function () {
+	if (wordCheckAfterSwap == "OFF") {
+		wordCheckAfterSwap = "ON";
+		document.getElementById("wordCheckSwapText").innerHTML = "Auto word check after swaps enabled";
+	} else {
+		wordCheckAfterSwap = "OFF";
+		document.getElementById("wordCheckSwapText").innerHTML = "Auto word check after swaps disabled";
+	}
+});
 			
 			
 			
@@ -353,6 +363,7 @@ if (letter13.name == "_") {
 };
 };
 
+var wordCheckAfterSwap = "OFF";
 var loopCounter;
 var gameScoreTemp;
 var gameScore;
@@ -370,4 +381,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 65";
+document.getElementById("versionnumber").innerHTML = "version: 66";
