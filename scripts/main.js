@@ -53,6 +53,7 @@ document.getElementById("letter11button").addEventListener("click", function () 
 		if (hardModeToggle == true) {
 			gameScore = gameScore - 1;
 			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
+			document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
 		}
 	};
 	updateGridVisual();
@@ -421,4 +422,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 76.4";
+document.getElementById("versionnumber").innerHTML = "version: 76.5";
