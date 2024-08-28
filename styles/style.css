@@ -2,20 +2,22 @@
   color: blue;
 }
 
-@keyframes swap {
+@keyframes explodedgravity {
   from {
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
 
   to {
-    transform: translateX(100%);
+    transform: translateY(500%);
   }
 }
 
 .letterbuttons {
-	font-size: 2em
+	font-size: 2em;
 }
 
-.tobeexplodedvisual {
-	transition: color: green 1s 
+.exploded {
+	font-size: 2em;
+	animation-name: explodedgravity;
+	animation-duration: 1s;
 }
