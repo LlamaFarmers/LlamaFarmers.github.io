@@ -16,6 +16,7 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	 gameScoreTemp = 0;
 });
 
+/*
 document.getElementById("wordCheckSwapButton").addEventListener("click", function () {
 	if (wordCheckAfterSwap == "OFF") {
 		wordCheckAfterSwap = "ON";
@@ -25,7 +26,7 @@ document.getElementById("wordCheckSwapButton").addEventListener("click", functio
 		document.getElementById("wordCheckSwapText").innerHTML = "Auto word check after swaps disabled";
 	}
 });
-			
+	*/		
 			
 			
 document.getElementById("wordCheckButton").addEventListener("click", function () {
@@ -475,4 +476,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 70.1";
+document.getElementById("versionnumber").innerHTML = "version: 70.3 (Toggle auto word check after swap option currently broke)";
