@@ -208,6 +208,16 @@ document.getElementById("bluealien").addEventListener("click", function () {
 	}
 });	
 
+document.getElementById("hardModeButton").addEventListener("click", function () {
+	if (hardModeToggle == true) {
+		hardModeToggle = false;
+		document.getElementById("hardModeButton").innerHTML = "Hard mode: OFF"
+	} else {
+		hardModeToggle = true;
+		document.getElementById("hardModeButton").innerHTML = "Hard mode: ON"
+	}
+});	
+
 function swapClearVisuals() {
 	document.getElementById("letter11button").style.backgroundColor = ""
 	document.getElementById("letter12button").style.backgroundColor = ""
@@ -389,6 +399,7 @@ if (letter33.tobeexploded) {
 	 }
 };
 
+var hardModeToggle;
 var loopCounter;
 var gameScoreTemp;
 var gameScore;
@@ -406,4 +417,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 75.1";
+document.getElementById("versionnumber").innerHTML = "version: 76";
