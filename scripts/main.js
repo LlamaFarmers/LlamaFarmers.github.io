@@ -123,7 +123,9 @@ if (letter33.tobeexploded) {
 	 updateGridVisual();
 	 setTimeout(updateGridGravity, 400)
 	 setTimeout(updateGridVisual, 500)
-	 setTimeout(document.getElementById("titletext").innerHTML = "Letter Swap", 500)
+	 setTimeout(function () {
+		 document.getElementById("titletext").innerHTML = "Letter Swap"
+	 }, 500);
 });
 
 
@@ -368,4 +370,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 64.8";
+document.getElementById("versionnumber").innerHTML = "version: 64.9";
