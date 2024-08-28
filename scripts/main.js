@@ -381,6 +381,10 @@ if (letter33.tobeexploded) {
 	 document.getElementById("roundwordstext").innerHTML = "Last round's words: " + roundWords;
 	 roundWords.length = 0;
 	 gameScoreTemp = 0;
+	 if (gameScore > 24) {
+		document.getElementById("bluemodetext").hidden = false;
+		document.getElementById("bluealien").hidden = false;
+	 }
 };
 
 var loopCounter;
@@ -400,4 +404,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 73.6";
+document.getElementById("versionnumber").innerHTML = "version: 74";
