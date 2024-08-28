@@ -50,6 +50,10 @@ document.getElementById("letter11button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		swapClearVisuals();
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		if (hardModeToggle == true) {
+			gameScore = gameScore - 1;
+			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
+		}
 	};
 	updateGridVisual();
 });
@@ -397,7 +401,6 @@ if (letter33.tobeexploded) {
 	 }
 	 if (gameScore > 0)
 		document.getElementById("tutorialtext").hidden = true;
-	 }
 };
 
 var hardModeToggle;
@@ -418,4 +421,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 76.2";
+document.getElementById("versionnumber").innerHTML = "version: 76.4";
