@@ -133,7 +133,7 @@ if (letter33.tobeexploded) {
 	 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
 	 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points!";
 	 if (gameScoreTemp > 3)
-		 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points! (x2 multiplier for multiple words"";
+		 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points! (x2 multiplier for multiple words";
 	 document.getElementById("roundwordstext").innerHTML = "Last round's words: " + roundWords;
 	 roundWords.length = 0;
 	 gameScoreTemp = 0
@@ -338,4 +338,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 59.4";
+document.getElementById("versionnumber").innerHTML = "version: 59.4.1";
