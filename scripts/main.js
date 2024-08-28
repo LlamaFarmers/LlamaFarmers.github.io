@@ -19,6 +19,7 @@ document.getElementById("resetButton").addEventListener("click", function () {
 			
 			
 document.getElementById("wordCheckButton").addEventListener("click", function () {
+document.getElementById("titletext").innerHTML = "DON'T CLICK!";
 if (wordlist.includes(row1Barcode)) {
 	letter11.tobeexploded = true;
 	letter12.tobeexploded = true;
@@ -122,6 +123,7 @@ if (letter33.tobeexploded) {
 	 updateGridVisual();
 	 setTimeout(updateGridGravity, 400)
 	 setTimeout(updateGridVisual, 500)
+	 setTimeout(document.getElementById("titletext").innerHTML = "Letter Swap", 500)
 });
 
 
@@ -366,4 +368,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 64.7";
+document.getElementById("versionnumber").innerHTML = "version: 64.8";
