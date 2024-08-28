@@ -23,7 +23,7 @@ if (wordlist.includes(row1Barcode)) {
 	letter11.tobeexploded = true;
 	letter12.tobeexploded = true;
 	letter13.tobeexploded = true;
-	roundWords.push(row1Barcode)
+	roundWords.push(" " + row1Barcode)
 	document.getElementById("letter11button").classList.add("tobeexplodedvisual");
 	document.getElementById("letter12button").style.color = "green";
 	document.getElementById("letter13button").style.color = "green";
@@ -32,7 +32,7 @@ if (wordlist.includes(row2Barcode)) {
 	letter21.tobeexploded = true;
 	letter22.tobeexploded = true;
 	letter23.tobeexploded = true;
-	roundWords.push(row2Barcode)
+	roundWords.push(" " + row2Barcode)
 	document.getElementById("letter21button").style.color = "green";
 	document.getElementById("letter22button").style.color = "green";
 	document.getElementById("letter23button").style.color = "green";
@@ -41,7 +41,7 @@ if (wordlist.includes(row3Barcode)) {
 	letter31.tobeexploded = true;
 	letter32.tobeexploded = true;
 	letter33.tobeexploded = true;
-	roundWords.push(row3Barcode)
+	roundWords.push(" " + row3Barcode)
 	document.getElementById("letter31button").style.color = "green";
 	document.getElementById("letter32button").style.color = "green";
 	document.getElementById("letter33button").style.color = "green";
@@ -333,4 +333,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 59.2";
+document.getElementById("versionnumber").innerHTML = "version: 59.3";
