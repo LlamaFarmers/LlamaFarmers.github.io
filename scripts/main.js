@@ -30,6 +30,15 @@ document.getElementById("titletext").innerHTML = "PLEASE WAIT";
 document.getElementById("swapCancelButton").addEventListener("click", function () {
 	swapBucket1 = 0;
 	swapBucket2 = 0;
+	document.getElementById("letter11button").style.backgroundColor = ""
+	document.getElementById("letter12button").style.backgroundColor = ""
+	document.getElementById("letter13button").style.backgroundColor = ""
+	document.getElementById("letter21button").style.backgroundColor = ""
+	document.getElementById("letter22button").style.backgroundColor = ""
+	document.getElementById("letter23button").style.backgroundColor = ""
+	document.getElementById("letter31button").style.backgroundColor = ""
+	document.getElementById("letter32button").style.backgroundColor = ""
+	document.getElementById("letter33button").style.backgroundColor = ""
 	document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 });
 	
@@ -37,6 +46,7 @@ document.getElementById("letter11button").addEventListener("click", function () 
 	if (swapBucket1 == 0) {
 		swapBucket1 = letter11;
 		swapBucket2 = letter11.name;
+		document.getElementById("letter11button").style.backgroundColor = "aquamarine"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter11.name + " with...";
 	} else if (swapBucket1 == letter11) {
 		document.getElementById("versionnumber").innerHTML = "ERROR: Double swapped "+ letter11.name;
@@ -45,6 +55,7 @@ document.getElementById("letter11button").addEventListener("click", function () 
 		letter11.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
+		document.getElementById("letter11button").style.backgroundColor = ""
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	};
 	updateGridVisual();
@@ -53,6 +64,7 @@ document.getElementById("letter12button").addEventListener("click", function () 
 	if (swapBucket1 == 0) {
 		swapBucket1 = letter12;
 		swapBucket2 = letter12.name;
+		document.getElementById("letter12button").style.backgroundColor = "aquamarine"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter12.name + " with...";
 	} else if (swapBucket1 == letter12) {
 		document.getElementById("versionnumber").innerHTML = "ERROR: Double swapped "+ letter12.name;
@@ -61,6 +73,7 @@ document.getElementById("letter12button").addEventListener("click", function () 
 		letter12.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
+		document.getElementById("letter12button").style.backgroundColor = ""
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
@@ -69,6 +82,7 @@ document.getElementById("letter13button").addEventListener("click", function () 
 	if (swapBucket1 == 0) {
 		swapBucket1 = letter13;
 		swapBucket2 = letter13.name;
+		document.getElementById("letter13button").style.backgroundColor = "aquamarine"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter13.name + " with...";
 	} else if (swapBucket1 == letter13) {
 		document.getElementById("versionnumber").innerHTML = "ERROR: Double swapped "+ letter13.name;
@@ -77,6 +91,7 @@ document.getElementById("letter13button").addEventListener("click", function () 
 		letter13.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
+		document.getElementById("letter13button").style.backgroundColor = ""
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
@@ -85,6 +100,7 @@ document.getElementById("letter21button").addEventListener("click", function () 
 	if (swapBucket1 == 0) {
 		swapBucket1 = letter21;
 		swapBucket2 = letter21.name;
+		document.getElementById("letter21button").style.backgroundColor = "aquamarine"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter21.name + " with...";
 	} else if (swapBucket1 == letter21) {
 		document.getElementById("versionnumber").innerHTML = "ERROR: Double swapped "+ letter21.name;
@@ -93,6 +109,7 @@ document.getElementById("letter21button").addEventListener("click", function () 
 		letter21.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
+		document.getElementById("letter21button").style.backgroundColor = ""
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
@@ -101,6 +118,7 @@ document.getElementById("letter22button").addEventListener("click", function () 
 	if (swapBucket1 == 0) {
 		swapBucket1 = letter22;
 		swapBucket2 = letter22.name;
+		document.getElementById("letter22button").style.backgroundColor = "aquamarine"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter22.name + " with...";
 	} else if (swapBucket1 == letter22) {
 		document.getElementById("versionnumber").innerHTML = "ERROR: Double swapped "+ letter22.name;
@@ -109,6 +127,7 @@ document.getElementById("letter22button").addEventListener("click", function () 
 		letter22.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
+		document.getElementById("letter22button").style.backgroundColor = ""
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
@@ -117,6 +136,7 @@ document.getElementById("letter23button").addEventListener("click", function () 
 	if (swapBucket1 == 0) {
 		swapBucket1 = letter23;
 		swapBucket2 = letter23.name;
+		document.getElementById("letter23button").style.backgroundColor = "aquamarine"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter23.name + " with...";
 	} else if (swapBucket1 == letter23) {
 		document.getElementById("versionnumber").innerHTML = "ERROR: Double swapped "+ letter23.name;
@@ -125,6 +145,7 @@ document.getElementById("letter23button").addEventListener("click", function () 
 		letter23.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
+		document.getElementById("letter23button").style.backgroundColor = ""
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
@@ -133,6 +154,7 @@ document.getElementById("letter31button").addEventListener("click", function () 
 	if (swapBucket1 == 0) {
 		swapBucket1 = letter31;
 		swapBucket2 = letter31.name;
+		document.getElementById("letter31button").style.backgroundColor = "aquamarine"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter31.name + " with...";
 	} else if (swapBucket1 == letter31) {
 		document.getElementById("versionnumber").innerHTML = "ERROR: Double swapped "+ letter31.name;
@@ -141,6 +163,7 @@ document.getElementById("letter31button").addEventListener("click", function () 
 		letter31.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
+		document.getElementById("letter31button").style.backgroundColor = ""
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
@@ -149,6 +172,7 @@ document.getElementById("letter32button").addEventListener("click", function () 
 	if (swapBucket1 == 0) {
 		swapBucket1 = letter32;
 		swapBucket2 = letter32.name;
+		document.getElementById("letter32button").style.backgroundColor = "aquamarine"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter32.name + " with...";
 	} else if (swapBucket1 == letter32) {
 		document.getElementById("versionnumber").innerHTML = "ERROR: Double swapped "+ letter32.name;
@@ -157,6 +181,7 @@ document.getElementById("letter32button").addEventListener("click", function () 
 		letter32.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
+		document.getElementById("letter32button").style.backgroundColor = ""
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
@@ -165,6 +190,7 @@ document.getElementById("letter33button").addEventListener("click", function () 
 	if (swapBucket1 == 0) {
 		swapBucket1 = letter33;
 		swapBucket2 = letter33.name;
+		document.getElementById("letter33button").style.backgroundColor = "aquamarine"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter33.name + " with...";
 	} else if (swapBucket1 == letter33) {
 		document.getElementById("versionnumber").innerHTML = "ERROR: Double swapped "+ letter33.name;
@@ -173,6 +199,7 @@ document.getElementById("letter33button").addEventListener("click", function () 
 		letter33.name = swapBucket2;
 		swapBucket1 = 0;
 		swapBucket2 = 0;
+		document.getElementById("letter33button").style.backgroundColor = ""
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
@@ -370,4 +397,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 72";
+document.getElementById("versionnumber").innerHTML = "version: 73";
