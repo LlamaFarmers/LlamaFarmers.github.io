@@ -8,7 +8,7 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	 letter31.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter32.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter33.name = letterBank.charAt(Math.floor(Math.random()*26));
-	 updateGrid()
+	 updateGridVisual()
 	 gameScoreTemp = 1;
 	 gameScore = gameScore - gameScoreTemp;
 	 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
@@ -120,7 +120,7 @@ if (letter33.tobeexploded) {
 	 roundWords.length = 0;
 	 gameScoreTemp = 0
 	 updateGridGravity()
-	 updateGrid()
+	 updateGridVisual()
 });
 
 
@@ -145,7 +145,7 @@ document.getElementById("letter11button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
-	updateGrid();
+	updateGridVisual();
 });
 document.getElementById("letter12button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -161,7 +161,7 @@ document.getElementById("letter12button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
-	updateGrid();
+	updateGridVisual();
 });
 document.getElementById("letter13button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -177,7 +177,7 @@ document.getElementById("letter13button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
-	updateGrid();
+	updateGridVisual();
 });
 document.getElementById("letter21button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -193,7 +193,7 @@ document.getElementById("letter21button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
-	updateGrid();
+	updateGridVisual();
 });	
 document.getElementById("letter22button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -209,7 +209,7 @@ document.getElementById("letter22button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
-	updateGrid();
+	updateGridVisual();
 });		
 document.getElementById("letter23button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -225,7 +225,7 @@ document.getElementById("letter23button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
-	updateGrid();
+	updateGridVisual();
 });
 document.getElementById("letter31button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -241,7 +241,7 @@ document.getElementById("letter31button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
-	updateGrid();
+	updateGridVisual();
 });
 document.getElementById("letter32button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -257,7 +257,7 @@ document.getElementById("letter32button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
-	updateGrid();
+	updateGridVisual();
 });
 document.getElementById("letter33button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -273,7 +273,7 @@ document.getElementById("letter33button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
-	updateGrid();
+	updateGridVisual();
 });
 
 
@@ -288,7 +288,7 @@ document.body.style.backgroundColor = "blue";
 
 
 
-function updateGrid() {
+function updateGridVisual() {
 	 document.getElementById("letter11button").innerHTML = letter11.name;
 	 document.getElementById("letter12button").innerHTML = letter12.name;
 	 document.getElementById("letter13button").innerHTML = letter13.name;
@@ -365,4 +365,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 60.1";
+document.getElementById("versionnumber").innerHTML = "version: 61";
