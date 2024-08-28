@@ -30,7 +30,7 @@ document.getElementById("wordCheckSwapButton").addEventListener("click", functio
 			
 document.getElementById("wordCheckButton").addEventListener("click", function () {
 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
-	 updateGridWordCheck;
+	 updateGridWordCheck();
 	 updateGridVisual();
 	 setTimeout(updateGridGravity, 400)
 	 setTimeout(updateGridVisual, 500)
@@ -385,4 +385,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 67.1";
+document.getElementById("versionnumber").innerHTML = "version: 67.2";
