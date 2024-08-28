@@ -432,11 +432,15 @@ if (letter33.tobeexploded) {
 }
 	 if (gameScoreTemp > 3)
 		 gameScoreTemp = gameScoreTemp * 2
+	 if (roundWords.length > 3)
+		 gameScoreTemp = gameScoreTemp * 2;
 	 gameScore = gameScore + gameScoreTemp
 	 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
 	 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points!";
 	 if (gameScoreTemp > 3)
-		 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points! (x2 multiplier for multiple words)";
+		 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points! (x2 multiplier for two words)";
+	 if (roundWords.length > 3)
+		 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points! (x4 multiplier for four+ words)";
 	 document.getElementById("roundwordstext").innerHTML = "Last round's words: " + roundWords;
 	 roundWords.length = 0;
 	 gameScoreTemp = 0;
@@ -466,4 +470,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 77.1";
+document.getElementById("versionnumber").innerHTML = "version: 77.2";
