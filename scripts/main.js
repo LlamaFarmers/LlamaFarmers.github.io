@@ -174,15 +174,7 @@ document.getElementById("letter11button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 	}
-	document.getElementById("letter11button").innerHTML = letter11.name;
-	 document.getElementById("letter12button").innerHTML = letter12.name;
-	 document.getElementById("letter13button").innerHTML = letter13.name;
-	 document.getElementById("letter21button").innerHTML = letter21.name;
-	 document.getElementById("letter22button").innerHTML = letter22.name;
-	 document.getElementById("letter23button").innerHTML = letter23.name;
-	 document.getElementById("letter31button").innerHTML = letter31.name;
-	 document.getElementById("letter32button").innerHTML = letter32.name;
-	 document.getElementById("letter33button").innerHTML = letter33.name;
+	updateGrid();
 });
 
 document.getElementById("letter12button").addEventListener("click", function () {
@@ -198,15 +190,7 @@ document.getElementById("letter12button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 	}
-	document.getElementById("letter11button").innerHTML = letter11.name;
-	 document.getElementById("letter12button").innerHTML = letter12.name;
-	 document.getElementById("letter13button").innerHTML = letter13.name;
-	 document.getElementById("letter21button").innerHTML = letter21.name;
-	 document.getElementById("letter22button").innerHTML = letter22.name;
-	 document.getElementById("letter23button").innerHTML = letter23.name;
-	 document.getElementById("letter31button").innerHTML = letter31.name;
-	 document.getElementById("letter32button").innerHTML = letter32.name;
-	 document.getElementById("letter33button").innerHTML = letter33.name;
+	updateGrid();
 });
 
 document.getElementById("letter13button").addEventListener("click", function () {
@@ -222,7 +206,17 @@ document.getElementById("letter13button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 	}
-	document.getElementById("letter11button").innerHTML = letter11.name;
+	updateGrid();
+});
+	
+		
+	
+document.getElementById("bluealien").addEventListener("click", function () {
+document.body.style.backgroundColor = "blue";
+});	
+
+function updateGrid() {
+	 document.getElementById("letter11button").innerHTML = letter11.name;
 	 document.getElementById("letter12button").innerHTML = letter12.name;
 	 document.getElementById("letter13button").innerHTML = letter13.name;
 	 document.getElementById("letter21button").innerHTML = letter21.name;
@@ -231,13 +225,13 @@ document.getElementById("letter13button").addEventListener("click", function () 
 	 document.getElementById("letter31button").innerHTML = letter31.name;
 	 document.getElementById("letter32button").innerHTML = letter32.name;
 	 document.getElementById("letter33button").innerHTML = letter33.name;
-});
-	
-		
-	
-document.getElementById("bluealien").addEventListener("click", function () {
-document.body.style.backgroundColor = "blue";
-});	
+	 row1Barcode = letter11.name + letter12.name + letter13.name;
+	 row2Barcode = letter21.name + letter22.name + letter23.name;
+	 row3Barcode = letter31.name + letter32.name + letter33.name;
+	 column1Barcode = letter11.name + letter21.name + letter31.name;
+	 column2Barcode = letter12.name + letter22.name + letter32.name;
+	 column3Barcode = letter13.name + letter23.name + letter33.name;
+}
 	
 var gameScoreTemp
 var gameScore;
@@ -253,4 +247,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 56";
+document.getElementById("versionnumber").innerHTML = "version: 57";
