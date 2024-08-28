@@ -2,6 +2,16 @@
   color: blue;
 }
 
+@keyframes swap {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
 .letterbuttons {
 	font-size: 2em
 }
