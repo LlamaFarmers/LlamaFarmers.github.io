@@ -73,6 +73,11 @@ document.getElementById("letter12button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		swapClearVisuals();
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		if (hardModeToggle == true) {
+			gameScore = gameScore - 1;
+			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
+			document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
+		}
 	}
 	updateGridVisual();
 });
@@ -91,6 +96,11 @@ document.getElementById("letter13button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		swapClearVisuals();
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		if (hardModeToggle == true) {
+			gameScore = gameScore - 1;
+			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
+			document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
+		}
 	}
 	updateGridVisual();
 });
@@ -109,6 +119,11 @@ document.getElementById("letter21button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		swapClearVisuals();
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		if (hardModeToggle == true) {
+			gameScore = gameScore - 1;
+			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
+			document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
+		}
 	}
 	updateGridVisual();
 });	
@@ -127,6 +142,11 @@ document.getElementById("letter22button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		swapClearVisuals();
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		if (hardModeToggle == true) {
+			gameScore = gameScore - 1;
+			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
+			document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
+		}
 	}
 	updateGridVisual();
 });		
@@ -145,6 +165,11 @@ document.getElementById("letter23button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		swapClearVisuals();
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		if (hardModeToggle == true) {
+			gameScore = gameScore - 1;
+			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
+			document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
+		}
 	}
 	updateGridVisual();
 });
@@ -163,6 +188,11 @@ document.getElementById("letter31button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		swapClearVisuals();
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		if (hardModeToggle == true) {
+			gameScore = gameScore - 1;
+			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
+			document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
+		}
 	}
 	updateGridVisual();
 });
@@ -181,6 +211,11 @@ document.getElementById("letter32button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		swapClearVisuals();
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		if (hardModeToggle == true) {
+			gameScore = gameScore - 1;
+			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
+			document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
+		}
 	}
 	updateGridVisual();
 });
@@ -199,6 +234,11 @@ document.getElementById("letter33button").addEventListener("click", function () 
 		swapBucket2 = 0;
 		swapClearVisuals();
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		if (hardModeToggle == true) {
+			gameScore = gameScore - 1;
+			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
+			document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
+		}
 	}
 	updateGridVisual();
 });
