@@ -62,6 +62,16 @@ document.getElementById("letter11button").addEventListener("click", function () 
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
+	if (wordCheckAfterSwap == "ON") {
+	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
+	 updateGridWordCheck();
+	 updateGridVisual();
+	 setTimeout(updateGridGravity, 400)
+	 setTimeout(updateGridVisual, 500)
+	 setTimeout(function () {
+		 document.getElementById("titletext").innerHTML = "Letter Swap"
+	 }, 500);
+};
 });
 document.getElementById("letter12button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -78,6 +88,16 @@ document.getElementById("letter12button").addEventListener("click", function () 
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
+	if (wordCheckAfterSwap == "ON") {
+	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
+	 updateGridWordCheck();
+	 updateGridVisual();
+	 setTimeout(updateGridGravity, 400)
+	 setTimeout(updateGridVisual, 500)
+	 setTimeout(function () {
+		 document.getElementById("titletext").innerHTML = "Letter Swap"
+	 }, 500);
+};
 });
 document.getElementById("letter13button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -94,6 +114,16 @@ document.getElementById("letter13button").addEventListener("click", function () 
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
+	if (wordCheckAfterSwap == "ON") {
+	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
+	 updateGridWordCheck();
+	 updateGridVisual();
+	 setTimeout(updateGridGravity, 400)
+	 setTimeout(updateGridVisual, 500)
+	 setTimeout(function () {
+		 document.getElementById("titletext").innerHTML = "Letter Swap"
+	 }, 500);
+};
 });
 document.getElementById("letter21button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -110,6 +140,16 @@ document.getElementById("letter21button").addEventListener("click", function () 
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
+	if (wordCheckAfterSwap == "ON") {
+	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
+	 updateGridWordCheck();
+	 updateGridVisual();
+	 setTimeout(updateGridGravity, 400)
+	 setTimeout(updateGridVisual, 500)
+	 setTimeout(function () {
+		 document.getElementById("titletext").innerHTML = "Letter Swap"
+	 }, 500);
+};
 });	
 document.getElementById("letter22button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -126,6 +166,16 @@ document.getElementById("letter22button").addEventListener("click", function () 
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
+	if (wordCheckAfterSwap == "ON") {
+	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
+	 updateGridWordCheck();
+	 updateGridVisual();
+	 setTimeout(updateGridGravity, 400)
+	 setTimeout(updateGridVisual, 500)
+	 setTimeout(function () {
+		 document.getElementById("titletext").innerHTML = "Letter Swap"
+	 }, 500);
+};
 });		
 document.getElementById("letter23button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -142,6 +192,16 @@ document.getElementById("letter23button").addEventListener("click", function () 
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
+	if (wordCheckAfterSwap == "ON") {
+	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
+	 updateGridWordCheck();
+	 updateGridVisual();
+	 setTimeout(updateGridGravity, 400)
+	 setTimeout(updateGridVisual, 500)
+	 setTimeout(function () {
+		 document.getElementById("titletext").innerHTML = "Letter Swap"
+	 }, 500);
+};
 });
 document.getElementById("letter31button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -158,6 +218,16 @@ document.getElementById("letter31button").addEventListener("click", function () 
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
+	if (wordCheckAfterSwap == "ON") {
+	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
+	 updateGridWordCheck();
+	 updateGridVisual();
+	 setTimeout(updateGridGravity, 400)
+	 setTimeout(updateGridVisual, 500)
+	 setTimeout(function () {
+		 document.getElementById("titletext").innerHTML = "Letter Swap"
+	 }, 500);
+};
 });
 document.getElementById("letter32button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -174,6 +244,16 @@ document.getElementById("letter32button").addEventListener("click", function () 
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
+	if (wordCheckAfterSwap == "ON") {
+	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
+	 updateGridWordCheck();
+	 updateGridVisual();
+	 setTimeout(updateGridGravity, 400)
+	 setTimeout(updateGridVisual, 500)
+	 setTimeout(function () {
+		 document.getElementById("titletext").innerHTML = "Letter Swap"
+	 }, 500);
+};
 });
 document.getElementById("letter33button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -190,6 +270,16 @@ document.getElementById("letter33button").addEventListener("click", function () 
 		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	}
 	updateGridVisual();
+	if (wordCheckAfterSwap == "ON") {
+	 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
+	 updateGridWordCheck();
+	 updateGridVisual();
+	 setTimeout(updateGridGravity, 400)
+	 setTimeout(updateGridVisual, 500)
+	 setTimeout(function () {
+		 document.getElementById("titletext").innerHTML = "Letter Swap"
+	 }, 500);
+};
 });
 
 
@@ -385,4 +475,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 67.2";
+document.getElementById("versionnumber").innerHTML = "version: 68";
