@@ -23,9 +23,9 @@ if (wordlist.includes(row1Barcode)) {
 	letter11.tobeexploded = true;
 	letter12.tobeexploded = true;
 	letter13.tobeexploded = true;
-	document.getElementById("letter11button").classList.toggle("exploded");
-	document.getElementById("letter12button").classList.toggle("exploded");
-	document.getElementById("letter13button").classList.toggle("exploded");
+	document.getElementById("letter11button").classList.add("exploded");
+	document.getElementById("letter12button").classList.add("exploded");
+	document.getElementById("letter13button").classList.add("exploded");
 	roundWords.push(" " + row1Barcode)
 }
 if (wordlist.includes(row2Barcode)) {
@@ -63,21 +63,21 @@ if (letter11.tobeexploded) {
 	letter11.name = "";
 	gameScoreTemp++;
 	letter11.tobeexploded = false;
-	document.getElementById("letter11button").classList.toggle("exploded");
+	document.getElementById("letter11button").classList.remove("exploded");
 }
 if (letter12.tobeexploded) {
 	//letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
 	letter12.name = "";
 	gameScoreTemp++;
 	letter12.tobeexploded = false;
-	document.getElementById("letter12button").classList.toggle("exploded");
+	document.getElementById("letter12button").classList.remove("exploded");
 }
 if (letter13.tobeexploded) {
 	//letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
 	letter13.name = "";
 	gameScoreTemp++;
 	letter13.tobeexploded = false;
-	document.getElementById("letter13button").classList.toggle("exploded");
+	document.getElementById("letter13button").classList.remove("exploded");
 }
 if (letter21.tobeexploded) {
 	//letter21.name = letterBank.charAt(Math.floor(Math.random()*26));
@@ -371,4 +371,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 62";
+document.getElementById("versionnumber").innerHTML = "version: 63";
