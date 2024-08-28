@@ -365,4 +365,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 61";
+document.getElementById("versionnumber").innerHTML = "version: 61.1";
