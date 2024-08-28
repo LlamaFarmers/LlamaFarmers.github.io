@@ -119,8 +119,8 @@ if (letter33.tobeexploded) {
 	 document.getElementById("roundwordstext").innerHTML = "Last round's words: " + roundWords;
 	 roundWords.length = 0;
 	 gameScoreTemp = 0;
-	 updateGridVisual();
-	 setTimeout(updateGridGravity, 500);
+	 setTimeout(updateGridVisual, 500);
+	 updateGridGravity;
 	 updateGridVisual();
 });
 
@@ -366,4 +366,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 64.3";
+document.getElementById("versionnumber").innerHTML = "version: 64.4";
