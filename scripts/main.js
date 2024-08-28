@@ -24,106 +24,79 @@ if (wordlist.includes(row1Barcode)) {
 	letter12.tobeexploded = true;
 	letter13.tobeexploded = true;
 	roundWords.push(" " + row1Barcode)
-	document.getElementById("letter11button").classList.add("tobeexplodedvisual");
-	document.getElementById("letter12button").style.color = "green";
-	document.getElementById("letter13button").style.color = "green";
 }
 if (wordlist.includes(row2Barcode)) {
 	letter21.tobeexploded = true;
 	letter22.tobeexploded = true;
 	letter23.tobeexploded = true;
 	roundWords.push(" " + row2Barcode)
-	document.getElementById("letter21button").style.color = "green";
-	document.getElementById("letter22button").style.color = "green";
-	document.getElementById("letter23button").style.color = "green";
 }
 if (wordlist.includes(row3Barcode)) {
 	letter31.tobeexploded = true;
 	letter32.tobeexploded = true;
 	letter33.tobeexploded = true;
 	roundWords.push(" " + row3Barcode)
-	document.getElementById("letter31button").style.color = "green";
-	document.getElementById("letter32button").style.color = "green";
-	document.getElementById("letter33button").style.color = "green";
 }
 if (wordlist.includes(column1Barcode)) {
 	letter11.tobeexploded = true;
 	letter21.tobeexploded = true;
 	letter31.tobeexploded = true;
 	roundWords.push(" " + column1Barcode)
-	document.getElementById("letter11button").style.color = "green";
-	document.getElementById("letter21button").style.color = "green";
-	document.getElementById("letter31button").style.color = "green";
 }
 if (wordlist.includes(column2Barcode)) {
 	letter12.tobeexploded = true;
 	letter22.tobeexploded = true;
 	letter32.tobeexploded = true;
 	roundWords.push(" " + column2Barcode)
-	document.getElementById("letter12button").style.color = "green";
-	document.getElementById("letter22button").style.color = "green";
-	document.getElementById("letter32button").style.color = "green";
 }
 if (wordlist.includes(column3Barcode)) {
 	letter13.tobeexploded = true;
 	letter23.tobeexploded = true;
 	letter33.tobeexploded = true;
 	roundWords.push(" " + column3Barcode)
-	document.getElementById("letter13button").style.color = "green";
-	document.getElementById("letter23button").style.color = "green";
-	document.getElementById("letter33button").style.color = "green";
 }
 if (letter11.tobeexploded) {
 	letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
-	document.getElementById("letter11button").classList.remove("tobeexplodedvisual");;
 	gameScoreTemp++;
 	letter11.tobeexploded = false;
 }
 if (letter12.tobeexploded) {
 	letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
-	document.getElementById("letter12button").style.color = "black";
 	gameScoreTemp++;
 	letter12.tobeexploded = false;
 }
 if (letter13.tobeexploded) {
 	letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
-	document.getElementById("letter13button").style.color = "black";
 	gameScoreTemp++;
 	letter13.tobeexploded = false;
 }
 if (letter21.tobeexploded) {
 	letter21.name = letterBank.charAt(Math.floor(Math.random()*26));
-	document.getElementById("letter21button").style.color = "black";
 	gameScoreTemp++;
 	letter21.tobeexploded = false;
 }
 if (letter22.tobeexploded) {
 	letter22.name = letterBank.charAt(Math.floor(Math.random()*26));
-	document.getElementById("letter22button").style.color = "black";
 	gameScoreTemp++;
 	letter22.tobeexploded = false;
 }
 if (letter23.tobeexploded) {
 	letter23.name = letterBank.charAt(Math.floor(Math.random()*26));
-	document.getElementById("letter23button").style.color = "black";
 	gameScoreTemp++;
 	letter23.tobeexploded = false;
 }
 if (letter31.tobeexploded) {
 	letter31.name = letterBank.charAt(Math.floor(Math.random()*26));
-	document.getElementById("letter31button").style.color = "black";
 	gameScoreTemp++;
 	letter31.tobeexploded = false;
 }
 if (letter32.tobeexploded) {
 	letter32.name = letterBank.charAt(Math.floor(Math.random()*26));
-	document.getElementById("letter32button").style.color = "black";
 	gameScoreTemp++;
 	letter32.tobeexploded = false;
 }
 if (letter33.tobeexploded) {
 	letter33.name = letterBank.charAt(Math.floor(Math.random()*26));
-	document.getElementById("letter33button").style.color = "black";
 	gameScoreTemp++;
 	letter33.tobeexploded = false;
 }
@@ -338,4 +311,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 59.4.1";
+document.getElementById("versionnumber").innerHTML = "version: 59.5";
