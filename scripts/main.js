@@ -264,7 +264,7 @@ if (letter13.name == "_") {
 };
 };
 
-function updateGridWordCheck {
+function updateGridWordCheck () {
 if (wordlist.includes(row1Barcode)) {
 	letter11.tobeexploded = true;
 	letter12.tobeexploded = true;
@@ -385,4 +385,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 67";
+document.getElementById("versionnumber").innerHTML = "version: 67.1";
