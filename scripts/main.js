@@ -57,55 +57,55 @@ if (wordlist.includes(column3Barcode)) {
 }
 if (letter11.tobeexploded) {
 	//letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter11.name = "";
+	letter11.name = "_";
 	gameScoreTemp++;
 	letter11.tobeexploded = false;
 }
 if (letter12.tobeexploded) {
 	//letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter12.name = "";
+	letter12.name = "_";
 	gameScoreTemp++;
 	letter12.tobeexploded = false;
 }
 if (letter13.tobeexploded) {
 	//letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter13.name = "";
+	letter13.name = "_";
 	gameScoreTemp++;
 	letter13.tobeexploded = false;
 }
 if (letter21.tobeexploded) {
 	//letter21.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter21.name = "";
+	letter21.name = "_";
 	gameScoreTemp++;
 	letter21.tobeexploded = false;
 }
 if (letter22.tobeexploded) {
 	//letter22.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter22.name = "";
+	letter22.name = "_";
 	gameScoreTemp++;
 	letter22.tobeexploded = false;
 }
 if (letter23.tobeexploded) {
 	//letter23.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter23.name = "";
+	letter23.name = "_";
 	gameScoreTemp++;
 	letter23.tobeexploded = false;
 }
 if (letter31.tobeexploded) {
 	//letter31.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter31.name = "";
+	letter31.name = "_";
 	gameScoreTemp++;
 	letter31.tobeexploded = false;
 }
 if (letter32.tobeexploded) {
 	//letter32.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter32.name = "";
+	letter32.name = "_";
 	gameScoreTemp++;
 	letter32.tobeexploded = false;
 }
 if (letter33.tobeexploded) {
 	//letter33.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter33.name = "";
+	letter33.name = "_";
 	gameScoreTemp++;
 	letter33.tobeexploded = false;
 }
@@ -309,41 +309,41 @@ function updateGridVisual() {
 
 function updateGridGravity () {
 for(loopCounter = 0; loopCounter < 3; loopCounter++)  {
-if (letter31.name == "") {
+if (letter31.name == "_") {
 	letter31.name = letter21.name;
-	letter21.name = "";
+	letter21.name = "_";
 }
-if (letter21.name == "") {
+if (letter21.name == "_") {
 	letter21.name = letter11.name;
-	letter11.name = "";
+	letter11.name = "_";
 }
-if (letter11.name == "") {
+if (letter11.name == "_") {
 	letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
 }
 };
 for(loopCounter = 0; loopCounter < 3; loopCounter++)  {
-if (letter32.name == "") {
+if (letter32.name == "_") {
 	letter32.name = letter22.name;
-	letter22.name = "";
+	letter22.name = "_";
 }
-if (letter22.name == "") {
+if (letter22.name == "_") {
 	letter22.name = letter12.name;
-	letter12.name = "";
+	letter12.name = "_";
 }
-if (letter12.name == "") {
+if (letter12.name == "_") {
 	letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
 }
 };
 for(loopCounter = 0; loopCounter < 3; loopCounter++)  {
-if (letter33.name == "") {
+if (letter33.name == "_") {
 	letter33.name = letter23.name;
-	letter23.name = "";
+	letter23.name = "_";
 }
-if (letter23.name == "") {
+if (letter23.name == "_") {
 	letter23.name = letter13.name;
-	letter13.name = "";
+	letter13.name = "_";
 }
-if (letter13.name == "") {
+if (letter13.name == "_") {
 	letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
 }
 };
@@ -366,4 +366,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 64.6.1";
+document.getElementById("versionnumber").innerHTML = "version: 64.7";
