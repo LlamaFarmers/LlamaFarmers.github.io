@@ -30,106 +30,7 @@ document.getElementById("wordCheckSwapButton").addEventListener("click", functio
 			
 document.getElementById("wordCheckButton").addEventListener("click", function () {
 document.getElementById("titletext").innerHTML = "DON'T CLICK!";
-if (wordlist.includes(row1Barcode)) {
-	letter11.tobeexploded = true;
-	letter12.tobeexploded = true;
-	letter13.tobeexploded = true;
-	roundWords.push(" " + row1Barcode)
-}
-if (wordlist.includes(row2Barcode)) {
-	letter21.tobeexploded = true;
-	letter22.tobeexploded = true;
-	letter23.tobeexploded = true;
-	roundWords.push(" " + row2Barcode)
-}
-if (wordlist.includes(row3Barcode)) {
-	letter31.tobeexploded = true;
-	letter32.tobeexploded = true;
-	letter33.tobeexploded = true;
-	roundWords.push(" " + row3Barcode)
-}
-if (wordlist.includes(column1Barcode)) {
-	letter11.tobeexploded = true;
-	letter21.tobeexploded = true;
-	letter31.tobeexploded = true;
-	roundWords.push(" " + column1Barcode)
-}
-if (wordlist.includes(column2Barcode)) {
-	letter12.tobeexploded = true;
-	letter22.tobeexploded = true;
-	letter32.tobeexploded = true;
-	roundWords.push(" " + column2Barcode)
-}
-if (wordlist.includes(column3Barcode)) {
-	letter13.tobeexploded = true;
-	letter23.tobeexploded = true;
-	letter33.tobeexploded = true;
-	roundWords.push(" " + column3Barcode)
-}
-if (letter11.tobeexploded) {
-	//letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter11.name = "_";
-	gameScoreTemp++;
-	letter11.tobeexploded = false;
-}
-if (letter12.tobeexploded) {
-	//letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter12.name = "_";
-	gameScoreTemp++;
-	letter12.tobeexploded = false;
-}
-if (letter13.tobeexploded) {
-	//letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter13.name = "_";
-	gameScoreTemp++;
-	letter13.tobeexploded = false;
-}
-if (letter21.tobeexploded) {
-	//letter21.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter21.name = "_";
-	gameScoreTemp++;
-	letter21.tobeexploded = false;
-}
-if (letter22.tobeexploded) {
-	//letter22.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter22.name = "_";
-	gameScoreTemp++;
-	letter22.tobeexploded = false;
-}
-if (letter23.tobeexploded) {
-	//letter23.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter23.name = "_";
-	gameScoreTemp++;
-	letter23.tobeexploded = false;
-}
-if (letter31.tobeexploded) {
-	//letter31.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter31.name = "_";
-	gameScoreTemp++;
-	letter31.tobeexploded = false;
-}
-if (letter32.tobeexploded) {
-	//letter32.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter32.name = "_";
-	gameScoreTemp++;
-	letter32.tobeexploded = false;
-}
-if (letter33.tobeexploded) {
-	//letter33.name = letterBank.charAt(Math.floor(Math.random()*26));
-	letter33.name = "_";
-	gameScoreTemp++;
-	letter33.tobeexploded = false;
-}
-	 if (gameScoreTemp > 3)
-		 gameScoreTemp = gameScoreTemp * 2
-	 gameScore = gameScore + gameScoreTemp
-	 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
-	 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points!";
-	 if (gameScoreTemp > 3)
-		 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points! (x2 multiplier for multiple words)";
-	 document.getElementById("roundwordstext").innerHTML = "Last round's words: " + roundWords;
-	 roundWords.length = 0;
-	 gameScoreTemp = 0;
+	 updateGridWordCheck;
 	 updateGridVisual();
 	 setTimeout(updateGridGravity, 400)
 	 setTimeout(updateGridVisual, 500)
@@ -363,6 +264,109 @@ if (letter13.name == "_") {
 };
 };
 
+function updateGridWordCheck {
+if (wordlist.includes(row1Barcode)) {
+	letter11.tobeexploded = true;
+	letter12.tobeexploded = true;
+	letter13.tobeexploded = true;
+	roundWords.push(" " + row1Barcode)
+}
+if (wordlist.includes(row2Barcode)) {
+	letter21.tobeexploded = true;
+	letter22.tobeexploded = true;
+	letter23.tobeexploded = true;
+	roundWords.push(" " + row2Barcode)
+}
+if (wordlist.includes(row3Barcode)) {
+	letter31.tobeexploded = true;
+	letter32.tobeexploded = true;
+	letter33.tobeexploded = true;
+	roundWords.push(" " + row3Barcode)
+}
+if (wordlist.includes(column1Barcode)) {
+	letter11.tobeexploded = true;
+	letter21.tobeexploded = true;
+	letter31.tobeexploded = true;
+	roundWords.push(" " + column1Barcode)
+}
+if (wordlist.includes(column2Barcode)) {
+	letter12.tobeexploded = true;
+	letter22.tobeexploded = true;
+	letter32.tobeexploded = true;
+	roundWords.push(" " + column2Barcode)
+}
+if (wordlist.includes(column3Barcode)) {
+	letter13.tobeexploded = true;
+	letter23.tobeexploded = true;
+	letter33.tobeexploded = true;
+	roundWords.push(" " + column3Barcode)
+}
+if (letter11.tobeexploded) {
+	//letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter11.name = "_";
+	gameScoreTemp++;
+	letter11.tobeexploded = false;
+}
+if (letter12.tobeexploded) {
+	//letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter12.name = "_";
+	gameScoreTemp++;
+	letter12.tobeexploded = false;
+}
+if (letter13.tobeexploded) {
+	//letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter13.name = "_";
+	gameScoreTemp++;
+	letter13.tobeexploded = false;
+}
+if (letter21.tobeexploded) {
+	//letter21.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter21.name = "_";
+	gameScoreTemp++;
+	letter21.tobeexploded = false;
+}
+if (letter22.tobeexploded) {
+	//letter22.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter22.name = "_";
+	gameScoreTemp++;
+	letter22.tobeexploded = false;
+}
+if (letter23.tobeexploded) {
+	//letter23.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter23.name = "_";
+	gameScoreTemp++;
+	letter23.tobeexploded = false;
+}
+if (letter31.tobeexploded) {
+	//letter31.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter31.name = "_";
+	gameScoreTemp++;
+	letter31.tobeexploded = false;
+}
+if (letter32.tobeexploded) {
+	//letter32.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter32.name = "_";
+	gameScoreTemp++;
+	letter32.tobeexploded = false;
+}
+if (letter33.tobeexploded) {
+	//letter33.name = letterBank.charAt(Math.floor(Math.random()*26));
+	letter33.name = "_";
+	gameScoreTemp++;
+	letter33.tobeexploded = false;
+}
+	 if (gameScoreTemp > 3)
+		 gameScoreTemp = gameScoreTemp * 2
+	 gameScore = gameScore + gameScoreTemp
+	 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
+	 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points!";
+	 if (gameScoreTemp > 3)
+		 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points! (x2 multiplier for multiple words)";
+	 document.getElementById("roundwordstext").innerHTML = "Last round's words: " + roundWords;
+	 roundWords.length = 0;
+	 gameScoreTemp = 0;
+};
+
 var wordCheckAfterSwap = "OFF";
 var loopCounter;
 var gameScoreTemp;
@@ -381,4 +385,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 66";
+document.getElementById("versionnumber").innerHTML = "version: 67";
