@@ -1,5 +1,5 @@
 document.getElementById("resetButton").addEventListener("click", function () {
-	if (extraVowelsModeToggle = false) {
+	if (extraVowelsModeToggle == false) {
 	 letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
@@ -331,7 +331,10 @@ if (letter21.name == "_") {
 	letter11.name = "_";
 }
 if (letter11.name == "_") {
+	if (extraVowelsModeToggle == false) {
 	letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
+	} else {
+	letter11.name = letterBankExtraVowels.charAt(Math.floor(Math.random()*31));
 }
 };
 for(loopCounter = 0; loopCounter < 3; loopCounter++)  {
@@ -344,7 +347,10 @@ if (letter22.name == "_") {
 	letter12.name = "_";
 }
 if (letter12.name == "_") {
+	if (extraVowelsModeToggle == false) {
 	letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
+	} else {
+	letter12.name = letterBankExtraVowels.charAt(Math.floor(Math.random()*31));
 }
 };
 for(loopCounter = 0; loopCounter < 3; loopCounter++)  {
@@ -357,7 +363,10 @@ if (letter23.name == "_") {
 	letter13.name = "_";
 }
 if (letter13.name == "_") {
+	if (extraVowelsModeToggle == false) {
 	letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
+	} else {
+	letter13.name = letterBankExtraVowels.charAt(Math.floor(Math.random()*31));
 }
 };
 };
@@ -494,4 +503,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 78.1";
+document.getElementById("versionnumber").innerHTML = "version: 78.2";
