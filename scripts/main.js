@@ -507,13 +507,13 @@ function findPossibleWords () {
 			if (possibleWordsGridLetters.includes(possibleWordsTemp.charAt(2))) {
 			possibleWords.push(possibleWordsTemp)
 			} else {
-				return
+				continue
 			}
 		} else {
-			return
+			continue
 		}
 	} else {
-		return
+		continue
 	}
 	}
 }
@@ -542,4 +542,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 81";
+document.getElementById("versionnumber").innerHTML = "version: 81.1";
