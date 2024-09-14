@@ -486,6 +486,10 @@ if (letter33.tobeexploded) {
 };
 
 function findPossibleWords () {
+	possibleWords.length = 0
+	for (possibleWordsTempCounter = 0; possibleWordsTempCounter < wordlist.length; possibleWordsTempCounter++) {
+	possibleWordsGridLetters.length = 0
+	possibleWordsTemp = 0
 	possibleWordsGridLetters.push(letter11.name)
 	possibleWordsGridLetters.push(letter12.name)
 	possibleWordsGridLetters.push(letter13.name)
@@ -495,10 +499,27 @@ function findPossibleWords () {
 	possibleWordsGridLetters.push(letter31.name)
 	possibleWordsGridLetters.push(letter32.name)
 	possibleWordsGridLetters.push(letter33.name)
-	possibleWordsTemp = wordlist[1]
+	possibleWordsTemp = wordlist[possibleWordsTempCounter]
+	if (possibleWordsGridLetters.includes(possibleWordsTemp.charAt(0))) {
+		possibleWordsGridLetters.splice(possibleWordsGridLetters.indexOf(possibleWordsTemp.charAt(0)), 1)
+		if (possibleWordsGridLetters.includes(possibleWordsTemp.charAt(1))) {
+			possibleWordsGridLetters.splice(possibleWordsGridLetters.indexOf(possibleWordsTemp.charAt(1)), 1)
+			if (possibleWordsGridLetters.includes(possibleWordsTemp.charAt(2))) {
+			possibleWords.push(possibleWordsTemp)
+			} else {
+				return
+			}
+		} else {
+			return
+		}
+	} else {
+		return
+	}
+	}
 }
 
 var possibleWordsTemp;
+var possibleWordsTempCounter;
 var hardModeToggle;
 var extraVowelsModeToggle;
 var loopCounter;
@@ -521,4 +542,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 80";
+document.getElementById("versionnumber").innerHTML = "version: 81";
