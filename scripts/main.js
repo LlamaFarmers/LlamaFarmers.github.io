@@ -28,7 +28,7 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	 }
 	 gameScore = 0
 	 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
-	 document.getElementById("roundscoretext").innerHTML = ""
+	 document.getElementById("roundscoretext").innerHTML = "You could've done " + possibleWords;
 	 document.getElementById("roundwordstext").innerHTML = ""
 });
 			
@@ -542,4 +542,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 81.1";
+document.getElementById("versionnumber").innerHTML = "version: 81.2";
