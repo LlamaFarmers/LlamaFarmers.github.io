@@ -298,6 +298,17 @@ document.getElementById("extraVowelsModeButton").addEventListener("click", funct
 	}
 });
 
+document.getElementById("possibleWordsDisplayButton").addEventListener("click", function () {
+	if (extraVowelsModeToggle == true) {
+		extraVowelsModeToggle = false;
+		document.getElementById("extraVowelsModeButton").innerHTML = "True Randomness: ON"
+	} else {
+		extraVowelsModeToggle = true;
+		document.getElementById("extraVowelsModeButton").innerHTML = "True Randomness: OFF"
+	}
+});
+
+
 function swapClearVisuals() {
 	document.getElementById("letter11button").style.backgroundColor = ""
 	document.getElementById("letter12button").style.backgroundColor = ""
@@ -530,6 +541,7 @@ var possibleWordsTemp;
 var possibleWordsTempCounter;
 var hardModeToggle;
 var extraVowelsModeToggle;
+var possibleWordsDisplayToggle;
 var loopCounter;
 var gameScoreTemp;
 var gameScore;
@@ -550,4 +562,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 81.2.3";
+document.getElementById("versionnumber").innerHTML = "version: 81.2.3.5";
