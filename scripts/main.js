@@ -1,4 +1,5 @@
 document.getElementById("resetButton").addEventListener("click", function () {
+	findPossibleWords()
 	if (extraVowelsModeToggle == false) {
 	 letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
@@ -542,4 +543,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 81.2";
+document.getElementById("versionnumber").innerHTML = "version: 81.2.1";
