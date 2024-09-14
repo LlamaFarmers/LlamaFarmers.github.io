@@ -33,12 +33,14 @@
 <p id="tutorialtext">Click on "Word check" to get points for words</p>
 <button id="resetButton" type="button">New game</button>
 <button id="hardModeButton" type="button">Hard mode: OFF</button>
+<button id="extraVowelsModeButton" type="button">True Randomness: OFF</button>
 <p hidden id="bluemodetext">Congratulations! You have unlocked Blue Mode for reaching 25 points!</p>
 <img hidden id="bluealien" src="images/bluemodeimage.png" alt="blue mode toggle image">
 <p id="versionnumber">Version: ERROR IN CODE</p>
 
 <script>
 let letterBank = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let letterBankExtraVowels = "ABCDEFGHIJKLMNOPQRSTUVWXYZAEIOU";
 let letterBankVowels = "AEIOU"
 const letter11 = { name: "A", tobeexploded: false};
 const letter12 = { name: "B", tobeexploded: false};
@@ -79,6 +81,7 @@ gameScoreTemp = 0;
 swapBucket1 = 0;
 swapBucket2 = 0;
 hardModeToggle = false;
+extraVowelsModeToggle = true;
 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
 </script>
 

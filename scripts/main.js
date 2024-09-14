@@ -267,6 +267,16 @@ document.getElementById("hardModeButton").addEventListener("click", function () 
 	}
 });	
 
+document.getElementById("extraVowelsModeButton").addEventListener("click", function () {
+	if (extraVowelsModeToggle == true) {
+		extraVowelsModeToggle = false;
+		document.getElementById("extraVowelsModeButton").innerHTML = "True Randomness: ON"
+	} else {
+		extraVowelsModeToggle = true;
+		document.getElementById("extraVowelsModeButton").innerHTML = "True Randomness: OFF"
+	}
+});
+
 function swapClearVisuals() {
 	document.getElementById("letter11button").style.backgroundColor = ""
 	document.getElementById("letter12button").style.backgroundColor = ""
@@ -452,6 +462,7 @@ if (letter33.tobeexploded) {
 
 
 var hardModeToggle;
+var extraVowelsModeToggle;
 var loopCounter;
 var gameScoreTemp;
 var gameScore;
@@ -470,4 +481,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 77.2";
+document.getElementById("versionnumber").innerHTML = "version: 78";
