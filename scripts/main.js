@@ -30,7 +30,7 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	 gameScore = 0
 	 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
 	 if (possibleWords.length > 1) {
-		document.getElementById("roundscoretext").innerHTML = "There were " + possibleWords.length + "possible words in that grid, including " + possibleWords[0];
+		document.getElementById("roundscoretext").innerHTML = "There were " + possibleWords.length + " possible words in that grid, including " + possibleWords[0];
 	 } else {
 		document.getElementById("roundscoretext").innerHTML = "Smart move, that grid was a dead end!";
 	 }
@@ -550,4 +550,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 81.2.2";
+document.getElementById("versionnumber").innerHTML = "version: 81.2.3";
