@@ -336,6 +336,7 @@ if (letter11.name == "_") {
 	} else {
 	letter11.name = letterBankExtraVowels.charAt(Math.floor(Math.random()*31));
 }
+}
 };
 for(loopCounter = 0; loopCounter < 3; loopCounter++)  {
 if (letter32.name == "_") {
@@ -352,6 +353,7 @@ if (letter12.name == "_") {
 	} else {
 	letter12.name = letterBankExtraVowels.charAt(Math.floor(Math.random()*31));
 }
+}
 };
 for(loopCounter = 0; loopCounter < 3; loopCounter++)  {
 if (letter33.name == "_") {
@@ -367,6 +369,7 @@ if (letter13.name == "_") {
 	letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
 	} else {
 	letter13.name = letterBankExtraVowels.charAt(Math.floor(Math.random()*31));
+}
 }
 };
 };
@@ -503,4 +506,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 78.2";
+document.getElementById("versionnumber").innerHTML = "version: 78.2.1";
