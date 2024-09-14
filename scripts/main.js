@@ -29,7 +29,14 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	 }
 	 gameScore = 0
 	 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
-	 document.getElementById("roundscoretext").innerHTML = "You could've done " + possibleWords;
+	 if (possibleWords.length > 1) {
+		document.getElementById("roundscoretext").innerHTML = "There were " + possibleWords.length + "possible words in that grid, including " + possibleWords[0];
+	 } else {
+		document.getElementById("roundscoretext").innerHTML = "Smart move, that grid was a dead end!";
+	 }
+	 if (possibleWords.length == 1) {
+		document.getElementById("roundscoretext").innerHTML = "There was 1 possible word in that grid, " + possibleWords[0]
+	 }
 	 document.getElementById("roundwordstext").innerHTML = ""
 });
 			
@@ -543,4 +550,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 81.2.1";
+document.getElementById("versionnumber").innerHTML = "version: 81.2.2";
