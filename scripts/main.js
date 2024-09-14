@@ -24,8 +24,10 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	}
 	 updateGridVisual()
 	 if (gameScore > gameHighScore) {
+		 if (possibleWordsDisplayToggle == false) {
 		 gameHighScore = gameScore
 		 document.getElementById("highscoretext").innerHTML = "HIGH SCORE: " + gameHighScore;
+		 }
 	 }
 	 gameScore = 0
 	 document.getElementById("scoretext").innerHTML = "SCORE: " + gameScore;
@@ -38,6 +40,8 @@ document.getElementById("resetButton").addEventListener("click", function () {
 		document.getElementById("roundscoretext").innerHTML = "There was 1 possible word in that grid, " + possibleWords[0]
 	 }
 	 document.getElementById("roundwordstext").innerHTML = ""
+	 document.getElementById("possibleWordsDisplay").innerHTML = ""
+	 possibleWordsDisplayToggle = false
 });
 			
 document.getElementById("wordCheckButton").addEventListener("click", function () {
@@ -299,13 +303,9 @@ document.getElementById("extraVowelsModeButton").addEventListener("click", funct
 });
 
 document.getElementById("possibleWordsDisplayButton").addEventListener("click", function () {
-	if (extraVowelsModeToggle == true) {
-		extraVowelsModeToggle = false;
-		document.getElementById("extraVowelsModeButton").innerHTML = "True Randomness: ON"
-	} else {
-		extraVowelsModeToggle = true;
-		document.getElementById("extraVowelsModeButton").innerHTML = "True Randomness: OFF"
-	}
+	findPossibleWords()
+	document.getElementById("possibleWordsDisplay").innerHTML = "(Click to refresh) " + possibleWords;
+	possibleWordsDisplayToggle = true;
 });
 
 
@@ -562,4 +562,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 81.2.3.5";
+document.getElementById("versionnumber").innerHTML = "version: 82";
