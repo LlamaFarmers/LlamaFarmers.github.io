@@ -304,7 +304,7 @@ document.getElementById("extraVowelsModeButton").addEventListener("click", funct
 
 document.getElementById("possibleWordsDisplayButton").addEventListener("click", function () {
 	findPossibleWords()
-	document.getElementById("possibleWordsDisplay").innerHTML = "(Click to refresh) " + possibleWords;
+	document.getElementById("possibleWordsDisplay").innerHTML = "Possible words (Click to refresh) " + possibleWords;
 	possibleWordsDisplayToggle = true;
 });
 
@@ -562,4 +562,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 82";
+document.getElementById("versionnumber").innerHTML = "version: 82.1";
