@@ -1,4 +1,5 @@
 document.getElementById("resetButton").addEventListener("click", function () {
+	if (extraVowelsModeToggle = false) {
 	 letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter12.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter13.name = letterBank.charAt(Math.floor(Math.random()*26));
@@ -8,6 +9,18 @@ document.getElementById("resetButton").addEventListener("click", function () {
 	 letter31.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter32.name = letterBank.charAt(Math.floor(Math.random()*26));
 	 letter33.name = letterBank.charAt(Math.floor(Math.random()*26));
+	} else {
+	 letter11.name = letterBankExtraVowels.charAt(Math.floor(Math.random()*31));
+	 letter12.name = letterBankExtraVowels.charAt(Math.floor(Math.random()*31));
+	 letter13.name = letterBankExtraVowels.charAt(Math.floor(Math.random()*31));
+	 letter21.name = letterBankExtraVowels.charAt(Math.floor(Math.random()*31));
+	 letter22.name = letterBankVowels.charAt(Math.floor(Math.random()*5));
+	 letter23.name = letterBankExtraVowels.charAt(Math.floor(Math.random()*31));
+	 letter31.name = letterBankExtraVowels.charAt(Math.floor(Math.random()*31));
+	 letter32.name = letterBankExtraVowels.charAt(Math.floor(Math.random()*31));
+	 letter33.name = letterBankExtraVowels.charAt(Math.floor(Math.random()*31));
+
+	}
 	 updateGridVisual()
 	 if (gameScore > gameHighScore) {
 		 gameHighScore = gameScore
@@ -481,4 +494,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 78";
+document.getElementById("versionnumber").innerHTML = "version: 78.1";
