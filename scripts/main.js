@@ -310,7 +310,7 @@ document.getElementById("possibleWordsDisplayButton").addEventListener("click", 
 
 document.getElementById("saveGameButton").addEventListener("click", function () {
 	savePassword = 0
-	savePassword = letter11.name + letter11.name + letter11.name + letter11.name + letter11.name + letter11.name + letter11.name + letter11.name + letter11.name;
+	savePassword = letter11.name + letter12.name + letter13.name + letter21.name + letter22.name + letter23.name + letter31.name + letter32.name + letter33.name;
 	document.getElementById("passwordDisplay").innerHTML = "Save password:" + savePassword;
 });
 
@@ -568,4 +568,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 84.3";
+document.getElementById("versionnumber").innerHTML = "version: 84.4";
