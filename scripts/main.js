@@ -308,8 +308,10 @@ document.getElementById("possibleWordsDisplayButton").addEventListener("click", 
 	possibleWordsDisplayToggle = true;
 });
 
-document.getElementById("possibleWordsDisplayButton").addEventListener("click", function () {
+document.getElementById("saveGameButton").addEventListener("click", function () {
 	savePassword = 0
+	savePassword = letter11.name + letter11.name + letter11.name + letter11.name + letter11.name + letter11.name + letter11.name + letter11.name + letter11.name;
+	document.getElementById("passwordDisplay").innerHTML = "Save password:" + savePassword;
 });
 
 function swapClearVisuals() {
@@ -566,4 +568,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 84.2";
+document.getElementById("versionnumber").innerHTML = "version: 84.3";
