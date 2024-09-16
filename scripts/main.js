@@ -308,6 +308,9 @@ document.getElementById("possibleWordsDisplayButton").addEventListener("click", 
 	possibleWordsDisplayToggle = true;
 });
 
+document.getElementById("possibleWordsDisplayButton").addEventListener("click", function () {
+	savePassword = 0
+});
 
 function swapClearVisuals() {
 	document.getElementById("letter11button").style.backgroundColor = ""
@@ -537,6 +540,7 @@ function findPossibleWords () {
 	}
 }
 
+var savePassword
 var possibleWordsTemp;
 var possibleWordsTempCounter;
 var hardModeToggle;
@@ -562,4 +566,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 84";
+document.getElementById("versionnumber").innerHTML = "version: 84.2";

@@ -35,6 +35,8 @@
 <button id="hardModeButton" type="button">Hard mode: OFF</button>
 <button id="extraVowelsModeButton" type="button">True Randomness: OFF</button>
 <button id="possibleWordsDisplayButton" type="button">Show possible words (Disables high score for current game!)</button>
+<button id="saveGameButton" type="button">Save game</button>
+<button id="loadGameButton" type="button">Load game</button>
 <p id="possibleWordsDisplay"></p>
 <p hidden id="bluemodetext">Congratulations! You have unlocked Blue Mode for reaching 25 points!</p>
 <img hidden id="bluealien" src="images/bluemodeimage.png" alt="blue mode toggle image">
@@ -77,6 +79,7 @@ row3Barcode = letter31.name + letter32.name + letter33.name;
 column1Barcode = letter11.name + letter21.name + letter31.name;
 column2Barcode = letter12.name + letter22.name + letter32.name;
 column3Barcode = letter13.name + letter23.name + letter33.name;
+savePassword = 0;
 gameScore = 0;
 gameHighScore = 0;
 gameScoreTemp = 0;
