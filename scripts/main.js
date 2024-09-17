@@ -321,6 +321,7 @@ document.getElementById("loadGameButton").addEventListener("click", function () 
 	} else {
 		document.getElementById("loadGameTextBox").hidden = true;
 		document.getElementById("loadGameTextBox").hidden = true;
+	}
 });
 
 function swapClearVisuals() {
@@ -578,4 +579,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 84.5";
+document.getElementById("versionnumber").innerHTML = "version: 84.5.1";
