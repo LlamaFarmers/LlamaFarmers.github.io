@@ -337,6 +337,7 @@ document.getElementById("submitPasswordButton").addEventListener("click", functi
 	letter33.name = loadPassword.charAt(8);
 	document.getElementById("loadGameTextBox").hidden = true;
 	document.getElementById("submitPasswordButton").hidden = true;
+	updateGridVisual();
 });
 
 function swapClearVisuals() {
@@ -594,4 +595,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 84.7";
+document.getElementById("versionnumber").innerHTML = "version: 84.7.1";
