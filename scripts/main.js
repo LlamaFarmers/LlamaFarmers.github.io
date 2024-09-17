@@ -316,6 +316,7 @@ document.getElementById("saveGameButton").addEventListener("click", function () 
 		document.getElementById("passwordDisplay").innerHTML = "Password: " + savePassword;
 	} else {
 		document.getElementById("passwordDisplay").hidden = true;
+	}
 });
 
 document.getElementById("loadGameButton").addEventListener("click", function () {
@@ -599,4 +600,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 84.8";
+document.getElementById("versionnumber").innerHTML = "version: 84.9";
