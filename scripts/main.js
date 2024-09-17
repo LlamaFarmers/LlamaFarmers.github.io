@@ -314,6 +314,15 @@ document.getElementById("saveGameButton").addEventListener("click", function () 
 	document.getElementById("passwordDisplay").innerHTML = "Save password:" + savePassword;
 });
 
+document.getElementById("loadGameButton").addEventListener("click", function () {
+	if (document.getElementById("loadGameTextBox").hidden == true) {
+		document.getElementById("loadGameTextBox").hidden = false;
+		document.getElementById("submitPasswordButton").hidden = false;
+	} else {
+		document.getElementById("loadGameTextBox").hidden = true;
+		document.getElementById("loadGameTextBox").hidden = true;
+});
+
 function swapClearVisuals() {
 	document.getElementById("letter11button").style.backgroundColor = ""
 	document.getElementById("letter12button").style.backgroundColor = ""
@@ -542,6 +551,7 @@ function findPossibleWords () {
 	}
 }
 
+var loadPassword
 var savePassword
 var possibleWordsTemp;
 var possibleWordsTempCounter;
@@ -568,4 +578,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 84.4";
+document.getElementById("versionnumber").innerHTML = "version: 84.5";

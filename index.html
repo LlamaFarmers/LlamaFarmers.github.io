@@ -37,7 +37,10 @@
 <button id="possibleWordsDisplayButton" type="button">Show possible words (Disables high score for current game!)</button>
 <button id="saveGameButton" type="button">Save game</button>
 <button id="loadGameButton" type="button">Load game</button>
+<div>
 <input hidden type="text" id="loadGameTextBox" name="loadPassword" />
+<button hidden id="submitPasswordButton" type="button">Submit Password</button>
+</div>
 <p id="passwordDisplay"></p>
 <p id="possibleWordsDisplay"></p>
 <p hidden id="bluemodetext">Congratulations! You have unlocked Blue Mode for reaching 25 points!</p>
@@ -81,6 +84,7 @@ row3Barcode = letter31.name + letter32.name + letter33.name;
 column1Barcode = letter11.name + letter21.name + letter31.name;
 column2Barcode = letter12.name + letter22.name + letter32.name;
 column3Barcode = letter13.name + letter23.name + letter33.name;
+loadPassword = 0;
 savePassword = 0;
 gameScore = 0;
 gameHighScore = 0;
