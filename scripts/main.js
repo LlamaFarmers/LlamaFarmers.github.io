@@ -325,7 +325,18 @@ document.getElementById("loadGameButton").addEventListener("click", function () 
 });
 
 document.getElementById("submitPasswordButton").addEventListener("click", function () {
-	loadPassword = loadGameTextBox.value
+	loadPassword = loadGameTextBox.value;
+	letter11.name = loadPassword.charAt(0);
+	letter12.name = loadPassword.charAt(1);
+	letter13.name = loadPassword.charAt(2);
+	letter21.name = loadPassword.charAt(3);
+	letter22.name = loadPassword.charAt(4);
+	letter23.name = loadPassword.charAt(5);
+	letter31.name = loadPassword.charAt(6);
+	letter32.name = loadPassword.charAt(7);
+	letter33.name = loadPassword.charAt(8);
+	document.getElementById("loadGameTextBox").hidden = true;
+	document.getElementById("submitPasswordButton").hidden = true;
 });
 
 function swapClearVisuals() {
@@ -583,4 +594,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 84.6";
+document.getElementById("versionnumber").innerHTML = "version: 84.7";
