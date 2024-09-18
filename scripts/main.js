@@ -575,7 +575,7 @@ function findPossibleWords () {
 }
 
 function updateUnlockedArt () {
-	for (loopCounter; loopCounter < roundWords.length; loopCounter++) {
+	for (loopCounter = 0; loopCounter < roundWords.length; loopCounter++) {
 	if (unlockedArt.includes(roundWords[loopCounter])) {
 			continue
 			} else {
@@ -613,4 +613,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 90.0.6";
+document.getElementById("versionnumber").innerHTML = "version: 90.0.7";
