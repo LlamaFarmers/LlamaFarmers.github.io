@@ -576,10 +576,10 @@ function findPossibleWords () {
 
 function updateUnlockedArt () {
 	for (loopCounter; loopCounter < roundWords.length; loopCounter++) {
-		if (unlockedArt.includes(roundWords.index(loopCounter))) {
+	if (unlockedArt.includes(roundWords[loopCounter])) {
 			continue
 			} else {
-				unlockedArt.push(roundWords.index(loopCounter))
+				unlockedArt.push(roundWords[loopCounter)
 			};
 	};
 };
@@ -613,4 +613,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 90.0.5";
+document.getElementById("versionnumber").innerHTML = "version: 90.0.6";
