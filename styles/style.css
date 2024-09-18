@@ -25,5 +25,5 @@
 }
 
 .artthumbnails {
-	.scale(.25);
+	transform: scale(.25);
 }
