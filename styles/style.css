@@ -23,3 +23,7 @@
 	animation-name: explodedgravity;
 	animation-duration: 1s;
 }
+
+.artthumbnails {
+	.scale(.25)
+}
