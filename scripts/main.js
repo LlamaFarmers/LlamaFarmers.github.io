@@ -579,7 +579,7 @@ function updateUnlockedArt () {
 	if (unlockedArt.includes(roundWords[loopCounter])) {
 			continue
 			} else {
-				unlockedArt.push(roundWords[loopCounter)
+			unlockedArt.push(roundWords[loopCounter])
 			};
 	};
 };
