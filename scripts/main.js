@@ -577,9 +577,9 @@ function updateUnlockedArt () {
 	for (loopCounter; loopCounter < roundWords.length; loopCounter++) {
 		if (unlockedArt.includes(roundWords.index(loopCounter))) {
 			continue
-	} else {
-		unlockedArt.push(roundWords.index(loopCounter)
-		
+			} else {
+				unlockedArt.push(roundWords.index(loopCounter))
+			};
 	};
 };
 
@@ -612,4 +612,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 90.0.2";
+document.getElementById("versionnumber").innerHTML = "version: 90.0.3";
