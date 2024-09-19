@@ -421,6 +421,7 @@ if (letter13.name == "_") {
 };
 
 function updateGridWordCheck () {
+roundWords.length = 0;	
 if (wordlist.includes(row1Barcode)) {
 	letter11.tobeexploded = true;
 	letter12.tobeexploded = true;
@@ -524,7 +525,6 @@ if (letter33.tobeexploded) {
 		 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points! (x4 multiplier for four+ words)";
 	 document.getElementById("roundwordstext").innerHTML = "Last round's words: " + roundWords;
 	 updateUnlockedArt();
-	 roundWords.length = 0;
 	 gameScoreTemp = 0;
 };
 
@@ -607,4 +607,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 90.7";
+document.getElementById("versionnumber").innerHTML = "version: 90.7.1";
