@@ -580,7 +580,7 @@ function updateUnlockedArt () {
 			continue
 			} else {
 			unlockedArt.push(roundWords[loopCounter])
-			
+			document.getElementById(roundWords[loopCounter] + "Art").hidden = false 
 			};
 	};
 };
@@ -615,4 +615,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 90.4";
+document.getElementById("versionnumber").innerHTML = "version: 90.5";
