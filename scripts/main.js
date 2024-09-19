@@ -273,15 +273,6 @@ document.getElementById("letter33button").addEventListener("click", function () 
 });
 
 
-
-document.getElementById("bluealien").addEventListener("click", function () {
-	if (document.body.style.backgroundColor == "blue") {
-		document.body.style.backgroundColor = "";
-	} else {
-	document.body.style.backgroundColor = "blue";
-	}
-});	
-
 document.getElementById("hardModeButton").addEventListener("click", function () {
 	if (hardModeToggle == true) {
 		hardModeToggle = false;
@@ -535,10 +526,6 @@ if (letter33.tobeexploded) {
 	 //updateUnlockedArt();
 	 roundWords.length = 0;
 	 gameScoreTemp = 0;
-	 if (gameScore > 24) {
-		document.getElementById("bluemodetext").hidden = false;
-		document.getElementById("bluealien").hidden = false;
-	 }
 };
 
 function findPossibleWords () {
@@ -615,4 +602,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 90.5.1";
+document.getElementById("versionnumber").innerHTML = "version: 90.5.2";
