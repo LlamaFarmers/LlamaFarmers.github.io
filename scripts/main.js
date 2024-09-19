@@ -420,43 +420,42 @@ if (letter13.name == "_") {
 };
 };
 
-function updateGridWordCheck () {
-roundWords.length = 0;	
+function updateGridWordCheck () {	
 if (wordlist.includes(row1Barcode)) {
 	letter11.tobeexploded = true;
 	letter12.tobeexploded = true;
 	letter13.tobeexploded = true;
-	roundWords.push(" " + row1Barcode)
+	roundWords.push(row1Barcode)
 }
 if (wordlist.includes(row2Barcode)) {
 	letter21.tobeexploded = true;
 	letter22.tobeexploded = true;
 	letter23.tobeexploded = true;
-	roundWords.push(" " + row2Barcode)
+	roundWords.push(row2Barcode)
 }
 if (wordlist.includes(row3Barcode)) {
 	letter31.tobeexploded = true;
 	letter32.tobeexploded = true;
 	letter33.tobeexploded = true;
-	roundWords.push(" " + row3Barcode)
+	roundWords.push(row3Barcode)
 }
 if (wordlist.includes(column1Barcode)) {
 	letter11.tobeexploded = true;
 	letter21.tobeexploded = true;
 	letter31.tobeexploded = true;
-	roundWords.push(" " + column1Barcode)
+	roundWords.push(column1Barcode)
 }
 if (wordlist.includes(column2Barcode)) {
 	letter12.tobeexploded = true;
 	letter22.tobeexploded = true;
 	letter32.tobeexploded = true;
-	roundWords.push(" " + column2Barcode)
+	roundWords.push(column2Barcode)
 }
 if (wordlist.includes(column3Barcode)) {
 	letter13.tobeexploded = true;
 	letter23.tobeexploded = true;
 	letter33.tobeexploded = true;
-	roundWords.push(" " + column3Barcode)
+	roundWords.push(column3Barcode)
 }
 if (letter11.tobeexploded) {
 	//letter11.name = letterBank.charAt(Math.floor(Math.random()*26));
@@ -523,8 +522,9 @@ if (letter33.tobeexploded) {
 		 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points! (x2 multiplier for two words)";
 	 if (roundWords.length > 3)
 		 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points! (x4 multiplier for four+ words)";
-	 document.getElementById("roundwordstext").innerHTML = "Last round's words: " + roundWords;
+	 document.getElementById("roundwordstext").innerHTML = "Last round's words: " + roundWords.join(", ");
 	 updateUnlockedArt();
+	 roundWords.length = 0;
 	 gameScoreTemp = 0;
 };
 
@@ -607,4 +607,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 90.7.1";
+document.getElementById("versionnumber").innerHTML = "version: 90.7.2";
