@@ -563,16 +563,21 @@ function findPossibleWords () {
 
 function updateUnlockedArt () {
 	for (loopCounter = 0; loopCounter < roundWords.length; loopCounter++) {
-	if (unlockedArt.includes(roundWords[loopCounter])) {
-			continue
-			} else {
-			unlockedArt.push(roundWords[loopCounter])
-			document.getElementById(roundWords[loopCounter] + "Art").hidden = false 
-			};
+	if (unlockableArt.includes(roundWords[loopCounter])) {
+		if (unlockedArt.includes(roundWords[loopCounter])) {
+				continue
+				} else {
+				unlockedArt.push(roundWords[loopCounter])
+				document.getElementById(roundWords[loopCounter] + "Art").hidden = false 
+				};
+	} else {
+		continue
+	};
 	};
 };
 
 
+const unlockableArt = []
 const unlockedArt = []
 var loadPassword
 var savePassword
@@ -602,4 +607,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 90.5.3";
+document.getElementById("versionnumber").innerHTML = "version: 90.6";
