@@ -577,7 +577,7 @@ function updateUnlockedArt () {
 };
 
 
-const unlockableArt = []
+const unlockableArt = ["APE", "PET", "FAN", "ART", "BLU", "GUY", "MAN"]
 const unlockedArt = []
 var loadPassword
 var savePassword
@@ -607,4 +607,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 90.6";
+document.getElementById("versionnumber").innerHTML = "version: 90.7";
