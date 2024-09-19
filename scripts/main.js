@@ -614,4 +614,5 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 90.3";
+document.body.style.backgroundColor = "silver"
+document.getElementById("versionnumber").innerHTML = "version: 90.4";
