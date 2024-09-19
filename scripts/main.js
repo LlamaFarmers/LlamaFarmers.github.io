@@ -580,7 +580,7 @@ function updateUnlockedArt () {
 			continue
 			} else {
 			unlockedArt.push(roundWords[loopCounter])
-			document.getElementById("polaroidAPEArt").hidden = false
+			
 			};
 	};
 };
@@ -614,4 +614,4 @@ var column1Barcode;
 var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
-document.getElementById("versionnumber").innerHTML = "version: 90.0.10";
+document.getElementById("versionnumber").innerHTML = "version: 90.1";
