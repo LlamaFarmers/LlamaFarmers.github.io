@@ -523,7 +523,7 @@ if (letter33.tobeexploded) {
 	 if (roundWords.length > 3)
 		 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points! (x4 multiplier for four+ words)";
 	 document.getElementById("roundwordstext").innerHTML = "Last round's words: " + roundWords;
-	 //updateUnlockedArt();
+	 updateUnlockedArt();
 	 roundWords.length = 0;
 	 gameScoreTemp = 0;
 };
@@ -602,4 +602,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 90.5.2";
+document.getElementById("versionnumber").innerHTML = "version: 90.5.3";
