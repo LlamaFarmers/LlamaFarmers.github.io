@@ -574,6 +574,7 @@ function updateUnlockedArt () {
 		continue
 	};
 	};
+	document.getElementById(artProgressTracker).innerHTML = "Cards found: " + unlockedArt.length + "/7";
 };
 
 
@@ -607,4 +608,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 90.7.2";
+document.getElementById("versionnumber").innerHTML = "version: 90.7.3";
