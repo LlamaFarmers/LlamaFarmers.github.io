@@ -610,7 +610,6 @@ function updateArtHint () {
 	}
 	}
 	if (possibleArtWords.length > 0) {
-		document.getElementById("arthinttext").style.color = blue;
 		document.getElementById("arthinttext").hidden = false;
 	} else {
 		document.getElementById("arthinttext").hidden = true;
@@ -649,4 +648,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 91.4";
+document.getElementById("versionnumber").innerHTML = "version: 91.4.1";
