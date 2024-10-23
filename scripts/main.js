@@ -529,6 +529,7 @@ if (letter33.tobeexploded) {
 		 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points! (x4 multiplier for four+ words)";
 	 document.getElementById("roundwordstext").innerHTML = "Last round's words: " + roundWords.join(", ");
 	 updateUnlockedArt();
+	 updateArtHint();
 	 roundWords.length = 0;
 	 gameScoreTemp = 0;
 };
@@ -582,7 +583,7 @@ function updateUnlockedArt () {
 	document.getElementById("artProgressTracker").innerHTML = "Cards found: " + unlockedArt.length + "/7";
 };
 
-function updateArthint () {
+function updateArtHint () {
 	possibleArtWords.length = 0
 	for (possibleWordsTempCounter = 0; possibleWordsTempCounter < unlockableArt.length; possibleWordsTempCounter++) {
 	possibleWordsGridLetters.length = 0
@@ -647,4 +648,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 91.1.2";
+document.getElementById("versionnumber").innerHTML = "version: 91.2";
