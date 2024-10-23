@@ -608,6 +608,7 @@ function updateArtHint () {
 		}
 	} else {
 		continue
+	}
 	} else {
 		continue
 	}
@@ -651,4 +652,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 91.4.3";
+document.getElementById("versionnumber").innerHTML = "version: 91.4.4";
