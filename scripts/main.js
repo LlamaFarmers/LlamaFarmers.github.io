@@ -593,6 +593,7 @@ function updateArtHint () {
 	possibleWordsGridLetters.push(letter32.name)
 	possibleWordsGridLetters.push(letter33.name)
 	possibleWordsTemp = unlockableArt[possibleWordsTempCounter]
+	if (!unlockedArt.includes(possibleWordsTemp)) {
 	if (possibleWordsGridLetters.includes(possibleWordsTemp.charAt(0))) {
 		possibleWordsGridLetters.splice(possibleWordsGridLetters.indexOf(possibleWordsTemp.charAt(0)), 1)
 		if (possibleWordsGridLetters.includes(possibleWordsTemp.charAt(1))) {
@@ -605,6 +606,8 @@ function updateArtHint () {
 		} else {
 			continue
 		}
+	} else {
+		continue
 	} else {
 		continue
 	}
@@ -648,4 +651,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 91.4.2";
+document.getElementById("versionnumber").innerHTML = "version: 91.4.3";
