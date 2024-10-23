@@ -364,7 +364,6 @@ function updateGridVisual() {
 	 column1Barcode = letter11.name + letter21.name + letter31.name;
 	 column2Barcode = letter12.name + letter22.name + letter32.name;
 	 column3Barcode = letter13.name + letter23.name + letter33.name;
-	 document.getElementById("arthinttext").innerHTML = possibleArtWords.length;
 }
 
 function updateGridGravity () {
@@ -643,4 +642,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 91.1";
+document.getElementById("versionnumber").innerHTML = "version: 91.1.1";
