@@ -364,12 +364,7 @@ function updateGridVisual() {
 	 column1Barcode = letter11.name + letter21.name + letter31.name;
 	 column2Barcode = letter12.name + letter22.name + letter32.name;
 	 column3Barcode = letter13.name + letter23.name + letter33.name;
-	 if (possibleArtWords.length > 0) {
-		document.getElementById("arthinttext").style.color = blue;
-		document.getElementById("arthinttext").hidden = false;
-	 } else {
-		document.getElementById("arthinttext").hidden = true;
-	 }	 
+	 updateArtHint();
 }
 
 function updateGridGravity () {
@@ -530,7 +525,6 @@ if (letter33.tobeexploded) {
 		 document.getElementById("roundscoretext").innerHTML = "Plus " + gameScoreTemp + " points! (x4 multiplier for four+ words)";
 	 document.getElementById("roundwordstext").innerHTML = "Last round's words: " + roundWords.join(", ");
 	 updateUnlockedArt();
-	 updateArtHint();
 	 roundWords.length = 0;
 	 gameScoreTemp = 0;
 };
@@ -615,6 +609,12 @@ function updateArtHint () {
 		continue
 	}
 	}
+	if (possibleArtWords.length > 0) {
+		document.getElementById("arthinttext").style.color = blue;
+		document.getElementById("arthinttext").hidden = false;
+	} else {
+		document.getElementById("arthinttext").hidden = true;
+	}	 
 }
 	
 
@@ -649,4 +649,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 91.3.2";
+document.getElementById("versionnumber").innerHTML = "version: 91.4";
