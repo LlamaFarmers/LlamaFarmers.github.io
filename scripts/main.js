@@ -71,7 +71,10 @@ document.getElementById("letter11button").addEventListener("click", function () 
 		document.getElementById("letter11button").style.backgroundColor = "#A6F4DC"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter11.name + " with...";
 	} else if (swapBucket1 == letter11) {
-		;
+		swapBucket1 = 0;
+		swapBucket2 = 0;
+		swapClearVisuals();
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	} else {
 		swapBucket1.name = letter11.name;
 		letter11.name = swapBucket2;
@@ -652,4 +655,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 91.5";
+document.getElementById("versionnumber").innerHTML = "version: 91.5.1";
