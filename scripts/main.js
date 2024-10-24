@@ -71,17 +71,11 @@ document.getElementById("letter11button").addEventListener("click", function () 
 		document.getElementById("letter11button").style.backgroundColor = "#A6F4DC"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter11.name + " with...";
 	} else if (swapBucket1 == letter11) {
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 	} else {
 		swapBucket1.name = letter11.name;
 		letter11.name = swapBucket2;
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 		if (hardModeToggle == true) {
 			gameScore = gameScore - 1;
 			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
@@ -363,7 +357,10 @@ document.getElementById("submitPasswordButton").addEventListener("click", functi
 	updateGridVisual();
 });
 
-function swapClearVisuals() {
+function swapClear() {
+	swapBucket1 = 0;
+	swapBucket2 = 0;
+	document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	document.getElementById("letter11button").style.backgroundColor = ""
 	document.getElementById("letter12button").style.backgroundColor = ""
 	document.getElementById("letter13button").style.backgroundColor = ""
