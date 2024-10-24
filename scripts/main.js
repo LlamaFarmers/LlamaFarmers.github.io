@@ -56,10 +56,6 @@ document.getElementById("titletext").innerHTML = "PLEASE WAIT";
 });
 
 
-
-document.getElementById("swapCancelButton").addEventListener("click", function () {
-	swapClearVisuals();
-});
 	
 document.getElementById("letter11button").addEventListener("click", function () {
 	if (swapBucket1 == 0) {
@@ -625,4 +621,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 93.1";
+document.getElementById("versionnumber").innerHTML = "version: 93.2";
