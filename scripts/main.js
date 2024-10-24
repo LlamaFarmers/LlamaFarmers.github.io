@@ -621,4 +621,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 93.2";
+document.getElementById("versionnumber").innerHTML = "version: 93.3";
