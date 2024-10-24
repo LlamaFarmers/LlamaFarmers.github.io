@@ -100,6 +100,7 @@ document.getElementById("letter12button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		swapClearVisuals();
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	} else {
 		swapBucket1.name = letter12.name;
 		letter12.name = swapBucket2;
@@ -125,6 +126,7 @@ document.getElementById("letter13button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		swapClearVisuals();
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	} else {
 		swapBucket1.name = letter13.name;
 		letter13.name = swapBucket2;
@@ -150,6 +152,7 @@ document.getElementById("letter21button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		swapClearVisuals();
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	} else {
 		swapBucket1.name = letter21.name;
 		letter21.name = swapBucket2;
@@ -175,6 +178,7 @@ document.getElementById("letter22button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		swapClearVisuals();
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	} else {
 		swapBucket1.name = letter22.name;
 		letter22.name = swapBucket2;
@@ -200,6 +204,7 @@ document.getElementById("letter23button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		swapClearVisuals();
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	} else {
 		swapBucket1.name = letter23.name;
 		letter23.name = swapBucket2;
@@ -225,6 +230,7 @@ document.getElementById("letter31button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		swapClearVisuals();
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	} else {
 		swapBucket1.name = letter31.name;
 		letter31.name = swapBucket2;
@@ -250,6 +256,7 @@ document.getElementById("letter32button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		swapClearVisuals();
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	} else {
 		swapBucket1.name = letter32.name;
 		letter32.name = swapBucket2;
@@ -275,6 +282,7 @@ document.getElementById("letter33button").addEventListener("click", function () 
 		swapBucket1 = 0;
 		swapBucket2 = 0;
 		swapClearVisuals();
+		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 	} else {
 		swapBucket1.name = letter33.name;
 		letter33.name = swapBucket2;
@@ -671,4 +679,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 91.5.4";
+document.getElementById("versionnumber").innerHTML = "version: 92.0";
