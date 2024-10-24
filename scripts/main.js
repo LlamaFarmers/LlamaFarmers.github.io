@@ -58,10 +58,7 @@ document.getElementById("titletext").innerHTML = "PLEASE WAIT";
 
 
 document.getElementById("swapCancelButton").addEventListener("click", function () {
-	swapBucket1 = 0;
-	swapBucket2 = 0;
 	swapClearVisuals();
-	document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
 });
 	
 document.getElementById("letter11button").addEventListener("click", function () {
@@ -91,17 +88,11 @@ document.getElementById("letter12button").addEventListener("click", function () 
 		document.getElementById("letter12button").style.backgroundColor = "#A6F4DC"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter12.name + " with...";
 	} else if (swapBucket1 == letter12) {
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 	} else {
 		swapBucket1.name = letter12.name;
 		letter12.name = swapBucket2;
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 		if (hardModeToggle == true) {
 			gameScore = gameScore - 1;
 			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
@@ -117,17 +108,11 @@ document.getElementById("letter13button").addEventListener("click", function () 
 		document.getElementById("letter13button").style.backgroundColor = "#A6F4DC"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter13.name + " with...";
 	} else if (swapBucket1 == letter13) {
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 	} else {
 		swapBucket1.name = letter13.name;
 		letter13.name = swapBucket2;
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 		if (hardModeToggle == true) {
 			gameScore = gameScore - 1;
 			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
@@ -143,17 +128,11 @@ document.getElementById("letter21button").addEventListener("click", function () 
 		document.getElementById("letter21button").style.backgroundColor = "#A6F4DC"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter21.name + " with...";
 	} else if (swapBucket1 == letter21) {
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 	} else {
 		swapBucket1.name = letter21.name;
 		letter21.name = swapBucket2;
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 		if (hardModeToggle == true) {
 			gameScore = gameScore - 1;
 			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
@@ -169,17 +148,11 @@ document.getElementById("letter22button").addEventListener("click", function () 
 		document.getElementById("letter22button").style.backgroundColor = "#A6F4DC"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter22.name + " with...";
 	} else if (swapBucket1 == letter22) {
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 	} else {
 		swapBucket1.name = letter22.name;
 		letter22.name = swapBucket2;
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 		if (hardModeToggle == true) {
 			gameScore = gameScore - 1;
 			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
@@ -195,17 +168,11 @@ document.getElementById("letter23button").addEventListener("click", function () 
 		document.getElementById("letter23button").style.backgroundColor = "#A6F4DC"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter23.name + " with...";
 	} else if (swapBucket1 == letter23) {
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 	} else {
 		swapBucket1.name = letter23.name;
 		letter23.name = swapBucket2;
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 		if (hardModeToggle == true) {
 			gameScore = gameScore - 1;
 			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
@@ -221,17 +188,11 @@ document.getElementById("letter31button").addEventListener("click", function () 
 		document.getElementById("letter31button").style.backgroundColor = "#A6F4DC"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter31.name + " with...";
 	} else if (swapBucket1 == letter31) {
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 	} else {
 		swapBucket1.name = letter31.name;
 		letter31.name = swapBucket2;
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 		if (hardModeToggle == true) {
 			gameScore = gameScore - 1;
 			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
@@ -247,17 +208,11 @@ document.getElementById("letter32button").addEventListener("click", function () 
 		document.getElementById("letter32button").style.backgroundColor = "#A6F4DC"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter32.name + " with...";
 	} else if (swapBucket1 == letter32) {
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 	} else {
 		swapBucket1.name = letter32.name;
 		letter32.name = swapBucket2;
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 		if (hardModeToggle == true) {
 			gameScore = gameScore - 1;
 			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
@@ -273,17 +228,11 @@ document.getElementById("letter33button").addEventListener("click", function () 
 		document.getElementById("letter33button").style.backgroundColor = "#A6F4DC"
 		document.getElementById("swappingtext").innerHTML = "Swapping " + letter33.name + " with...";
 	} else if (swapBucket1 == letter33) {
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 	} else {
 		swapBucket1.name = letter33.name;
 		letter33.name = swapBucket2;
-		swapBucket1 = 0;
-		swapBucket2 = 0;
-		swapClearVisuals();
-		document.getElementById("swappingtext").innerHTML = "Click on letters to swap them";
+		swapClear();
 		if (hardModeToggle == true) {
 			gameScore = gameScore - 1;
 			document.getElementById("roundscoretext").innerHTML = "Minus 1 point for letter swap";
@@ -676,4 +625,4 @@ var column2Barcode;
 var column3Barcode;
 var onOffState = "OFF";
 document.body.style.backgroundColor = "silver"
-document.getElementById("versionnumber").innerHTML = "version: 93.0 (Swap Canceling improvements) ";
+document.getElementById("versionnumber").innerHTML = "version: 93.1";
